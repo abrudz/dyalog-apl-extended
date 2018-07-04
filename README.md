@@ -10,14 +10,12 @@ Mostly extended domains of existing primitives. A couple of new ones, and a gene
 
 ### Content
 
-
-
 | Name             | Symbol | Extension                                                    |
 | ---------------- | ------ | ------------------------------------------------------------ |
 | ∆UCS             | `⎕UCS` | scalar when monadic                                          |
 | BackSlash        | `\`    | `∘.f` when dyadic                                            |
-| CircleDiaeresis  | `⍥`    | Over and Depth                                               |
-| DelDiaeresis     | `⍢`    | Under (a.k.a. Dual)                                          |
+| CircleDiaeresis  | `⍥`    | Over and Depth 🆕                                           |
+| DelDiaeresis     | `⍢`    | Under (a.k.a. Dual) 🆕                                      |
 | Diaeresis        | `¨`    | allows constant operand                                      |
 | Downstile        | `⌊`    | monadic lowercases letters                                   |
 | DownShoe         | `∪`    | allows rank>1                                                |
@@ -27,7 +25,7 @@ Mostly extended domains of existing primitives. A couple of new ones, and a gene
 | LeftShoeWithAxis | `⊂[k]` | as above, but called with left operand                       |
 | Minus            | `-`    | monadic flips letter case                                    |
 | Plus             | `+`    | monadic converts letters to title case when possible         |
-| Root             | `√`    | (Square) Root                                                |
+| Root             | `√`    | (Square) Root 🆕                                            |
 | Stile            |<code>&#124;</code>| monadic normalises letters to lowercase (upper then lower)   |
 | Tilde            | `~`    | allows non-Booleans when monadic, allows rank>1 when dyadic  |
 | TildeDiaeresis   | `⍨`    | allows constant operand                                      |
