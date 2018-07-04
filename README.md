@@ -20,6 +20,7 @@ Mostly extended domains of existing primitives. A couple of new ones, and a gene
 | DelDiaeresis     | `⍢`    | Under (a.k.a. Dual)                                          |
 | Diaeresis        | `¨`    | allows constant operand                                      |
 | Downstile        | `⌊`    | monadic lowercases letters                                   |
+| DownShoe         | `∪`    | allows rank>1                                                |
 | DownTack         | `⊤`    | 2s as default left argument                                  |
 | JotDiaeresis     | `⍤`    | allows constant left operand, Atop with function right operand |
 | LeftShoe         | `⊂`    | each left argument element says how many partitions to begin |
@@ -31,6 +32,7 @@ Mostly extended domains of existing primitives. A couple of new ones, and a gene
 | TildeDiaeresis   | `⍨`    | allows constant operand                                      |
 | Times            | `×`    | monadic queries case of letters (lower: `¯1`, title: `0`, upper: `1`) |
 | Upstile          | `⌈`    | monadic lowercases letters                                   |
+| UpShoe           | `∩`    | allows rank>1                                                |
 | UpTack           | `⊥`    | 2 as default left argument                                   |
 | Vel              | `∨`    | monadic is Descending Sort                                   |
 | Wedge            | `∧`    | monadic is Ascending Sort                                    |
