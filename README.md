@@ -20,6 +20,7 @@ Mostly extended domains of existing primitives. A couple of new ones, and a gene
 | Downstile        | `⌊`    | monadic lowercases letters                                   |
 | DownShoe         | `∪`    | allows rank>1                                                |
 | DownTack         | `⊤`    | 2s as default left argument                                  |
+| IotaUnderbar     | `⍸`    | allows duplicates/non-Booleans                               |
 | JotDiaeresis     | `⍤`    | allows constant left operand, Atop with function right operand |
 | LeftShoe         | `⊂`    | each left argument element says how many partitions to begin |
 | LeftShoeWithAxis | `⊂[k]` | as above, but called with left operand                       |
