@@ -1,4 +1,4 @@
-﻿ LeftShoeWithAxis←{ ⍝ ⊂[k] (as kC) which allows inserting/appending empty partitions
+﻿ LeftShoeWithAxis←{ ⍝ ⊂[k] (as kC) which allows short left arguments and inserting/appending empty partitions
      0=⎕NC'⍺':⊂[⍺⍺]⍵ ⍝ monadic case
      len←⍺⍺⊃⍴1/⍵
      old←len↑⍺
