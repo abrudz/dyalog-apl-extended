@@ -10,7 +10,7 @@ Mostly extended domains of existing primitives. A couple of new ones, and a gene
 
 ### Content
 
-| Name             | Symbol | * | Extension                                                |
+| Name             | Glyph  | * | Extension                                                |
 | ---------------- | ------ | --- | --------------------------------------------------------- |
 | BackSlash        | `\`    | 🔶 | `∘.f` when dyadic                                         |
 | CircleDiaeresis  | `⍥`    | 🔺 | Over and Depth                                            |
