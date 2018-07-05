@@ -21,6 +21,7 @@ Mostly extended domains of existing primitives. A couple of new ones, and a gene
 | DownShoe         | `∪`    | allows rank>1                                                |
 | DownTack         | `⊤`    | 2s as default left argument                                  |
 | IotaUnderbar     | `⍸`    | allows duplicates/non-Booleans                               |
+| IotaUnderbarInverse | `⍸⍣¯1` | Applied to `r` finds `a` such that `r≡⍸a`🆕              |
 | JotDiaeresis     | `⍤`    | allows constant left operand, Atop with function right operand |
 | LeftShoe         | `⊂`    | each left argument element says how many partitions to begin |
 | LeftShoeWithAxis | `⊂[k]` | as above, but called with left operand                       |
