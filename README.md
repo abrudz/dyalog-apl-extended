@@ -30,7 +30,7 @@ Mostly extended domains of existing primitives. A couple of new ones, and a gene
 | Tilde            | `~`    | allows non-Booleans when monadic, allows rank>1 when dyadic  |
 | TildeDiaeresis   | `⍨`    | allows constant operand                                      |
 | Times            | `×`    | monadic queries case of letters (lower: `¯1`, title: `0`, upper: `1`) |
-| Upstile          | `⌈`    | monadic lowercases letters                                   |
+| Upstile          | `⌈`    | monadic uppercases letters                                   |
 | UpShoe           | `∩`    | allows rank>1                                                |
 | UpTack           | `⊥`    | 2 as default left argument                                   |
 | Vel              | `∨`    | monadic is Descending Sort                                   |
