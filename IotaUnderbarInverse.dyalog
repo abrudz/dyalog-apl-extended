@@ -1,3 +1,4 @@
 ﻿ IotaUnderbarInverse←{ ⍝ Monadic ⍸⍣¯1
-     ¯1+{≢⍵}⌸(⍳⌈/⍵),⍵
+     shape←⊃⌈/⍵
+     shape⍴¯1+{≢⍵}⌸(,⍳shape),,⍵
  }
