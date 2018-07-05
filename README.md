@@ -27,7 +27,7 @@ Mostly extended domains of existing primitives. A couple of new ones, and a gene
 | Minus            | `-`    | monadic flips letter case                                    |
 | Plus             | `+`    | monadic converts letters to title case when possible         |
 | Root             | `√`    | (Square) Root                                                |
-| Stile            | `|`    | monadic normalises letters to lowercase (upper then lower)   |
+| Stile            | `\|`    | monadic normalises letters to lowercase (upper then lower)   |
 | TildeDiaeresis   | `⍨`    | allows constant operand                                      |
 | Times            | `×`    | monadic queries case of letters (lower: `¯1`, title: `0`, upper: `1`) |
 | Upstile          | `⌈`    | monadic lowercases letters                                   |
