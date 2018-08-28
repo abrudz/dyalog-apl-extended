@@ -26,6 +26,7 @@ Mostly extended domains of existing primitives. A couple of new ones, and a gene
 | [LeftShoeWithAxis](LeftShoeWithAxis.dyalog)       | `⊂[k]` |  🔵   | as above, but called with left operand                       |
 | [Minus](Minus.dyalog)                             |  `-`   |  🔵   | monadic flips letter case                                    |
 | [Plus](Plus.dyalog)                               |  `+`   |  🔵   | monadic converts letters to title case when possible         |
+| [Rho](Rho.dyalog)                                 |  `⍴`   |  🔵   | allows omitting one dimension length with `¯1`               |
 | [Root](Root.dyalog)                               |  `√`   |  🔺   | (Square) Root                                                |
 | [Stile](Stile.dyalog)                             |  `\|`  |  🔵   | monadic normalises letters to lowercase (upper then lower)   |
 | [Tilde](Tilde.dyalog)                             |  `~`   |  🔵   | monadic allows probabilities, dyadic allows rank>1           |
