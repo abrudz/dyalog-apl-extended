@@ -1,6 +1,6 @@
 # Extensions of Dyalog APL
 
-Mostly extended domains of existing primitives. A couple of new ones, and a generalised system function.
+Mostly extended domains of existing primitives. A couple of new ones, a generalised system function, and a new system operator.
 
 ### How to use
 
@@ -27,6 +27,7 @@ Mostly extended domains of existing primitives. A couple of new ones, and a gene
 | [Minus](Minus.dyalog)                             |  `-`   |  🔵   | monadic flips letter case                                    |
 | [Plus](Plus.dyalog)                               |  `+`   |  🔵   | monadic converts letters to title case when possible         |
 | [Rho](Rho.dyalog)                                 |  `⍴`   |  🔵   | allows omitting one dimension length with `¯1`               |
+| [RightShoeUnderbar](RightShoeUnderbar.dyalog)     |  `⊇`   |  🔺   | disclose if scalar                                           |
 | [Root](Root.dyalog)                               |  `√`   |  🔺   | (Square) Root                                                |
 | [Stile](Stile.dyalog)                             |  `\|`  |  🔵   | monadic normalises letters to lowercase (upper then lower)   |
 | [Tilde](Tilde.dyalog)                             |  `~`   |  🔵   | monadic allows probabilities, dyadic allows rank>1           |
@@ -37,6 +38,7 @@ Mostly extended domains of existing primitives. A couple of new ones, and a gene
 | [UpTack](UpTack.dyalog)                           |  `⊥`   |  🔶   | 2 as default left argument                                   |
 | [Vel](Vel.dyalog)                                 |  `∨`   |  🔶   | monadic is Descending Sort                                   |
 | [Wedge](Wedge.dyalog)                             |  `∧`   |  🔶   | monadic is Ascending Sort                                    |
+| [∆C](∆C.dyalog)                                   |  `⎕C`  |  🔺   | `fn ⎕C` applys case-insensitively, `array ⎕C` case-folds     |
 | [∆UCS](∆UCS.dyalog)                               | `⎕UCS` |  🔵   | scalar when monadic                                          |
 
-* 🔺 means new glyph 🔶 means added valence 🔵 means expanded domain
+* 🔺 means new feature 🔶 means added valence 🔵 means expanded domain
