@@ -41,4 +41,5 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 | [∆C](∆C.dyalog)                                   |  `⎕C`  |  🔺   | `fn ⎕C` applys case-insensitively, `array ⎕C` case-folds     |
 | [∆NS](∆NS.dyalog)                                 |  `⎕NS` |  🔵   | allows `names ⎕NS values`                                    |
 | [∆UCS](∆UCS.dyalog)                               | `⎕UCS` |  🔵   | scalar when monadic                                          |
+
 * 🔺 means new feature 🔶 means added valence 🔵 means expanded domain
