@@ -1,6 +1,6 @@
 # Extensions of Dyalog APL
 
-Mostly extended domains of existing primitives. A couple of new ones, a generalised system function, and a new system operator.
+Extended domains of existing primitives/quad-names, and a few new ones.
 
 ### How to use
 
@@ -39,6 +39,6 @@ Mostly extended domains of existing primitives. A couple of new ones, a generali
 | [Vel](Vel.dyalog)                                 |  `∨`   |  🔶   | monadic is Descending Sort                                   |
 | [Wedge](Wedge.dyalog)                             |  `∧`   |  🔶   | monadic is Ascending Sort                                    |
 | [∆C](∆C.dyalog)                                   |  `⎕C`  |  🔺   | `fn ⎕C` applys case-insensitively, `array ⎕C` case-folds     |
+| [∆NS](∆NS.dyalog)                                 |  `⎕NS` |  🔵   | allows `names ⎕NS values`                                    |
 | [∆UCS](∆UCS.dyalog)                               | `⎕UCS` |  🔵   | scalar when monadic                                          |
-
 * 🔺 means new feature 🔶 means added valence 🔵 means expanded domain
