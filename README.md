@@ -4,7 +4,7 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 
 ### How to use
 
-```APL
+```
 ]Load path/dyalog-apl-extensions/*
 ```
 
@@ -39,7 +39,7 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 | [Vel](Vel.dyalog)                                 |  `∨`   |  🔶   | monadic is Descending Sort                                   |
 | [Wedge](Wedge.dyalog)                             |  `∧`   |  🔶   | monadic is Ascending Sort                                    |
 | [∆C](∆C.dyalog)                                   |  `⎕C`  |  🔺   | `fn ⎕C` applys case-insensitively, `array ⎕C` case-folds     |
-| [∆NS](∆NS.dyalog)                                 |  `⎕NS` |  🔵   | allows `names ⎕NS values`                                    |
+| [∆NS](∆NS.dyalog)                                 |  `⎕NS` |  🔵   | allows `⎕NS names values`                                    |
 | [∆UCS](∆UCS.dyalog)                               | `⎕UCS` |  🔵   | scalar when monadic                                          |
 
 * 🔺 means new feature 🔶 means added valence 🔵 means expanded domain
