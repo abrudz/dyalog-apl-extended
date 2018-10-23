@@ -1,5 +1,10 @@
-﻿ ∆NS←{ ⍝ allows names ⎕NS values
-     ~×⎕NC'⍺':⎕NS ⍵ ⍝ regular monadic functionality
-     1≥|≡⍺:n←⍺ ⎕NS ⍵ ⍝ regular dyadic functionality
-     n⊣(n←⎕NS ⍬).(⍎⍕⍺'←⍵') ⍝ names ⎕NS values
+ ∆NS←{ ⍝ allows ⎕NS names values
+     ⍺←⊢ ⍝ default to unnamed namespace
+     11::⎕SIGNAL 11
+     (0=≢⍵)∨2≥|≡⍵:{_←⍵}⍣(2∊⎕NC'⍺')⊢⍺ ⎕NS ⍵ ⍝ default behaviour
+     {_←⍵}⍣(2∊⎕NC'⍺')⊃⊃(⍺ ⎕NS ⍬){ ⍝ new behaviour
+         (,1)≢(⍴,≡)⍵:⍺⍺⍎⍺,'←⍵ ⋄ ⍺⍺' ⍝ non-⎕OR: use value
+         11::⍺⍺⍎⍺,'←⎕NS''⍵'' ⋄ ⍺⍺' ⍝ object?
+         ⍺⍺⍎⍺,'←⎕FX''⍵'' ⋄ ⍺⍺' ⍝ function?
+     }¨/⍵
  }
