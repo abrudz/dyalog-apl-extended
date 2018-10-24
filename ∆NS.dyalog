@@ -4,7 +4,7 @@
      (0=≢⍵)∨2≥|≡⍵:{_←⍵}⍣(2∊⎕NC'⍺')⊢⍺ ⎕NS ⍵ ⍝ default behaviour
      {_←⍵}⍣(2∊⎕NC'⍺')⊃⊃(⍺ ⎕NS ⍬){ ⍝ new behaviour
          (,1)≢(⍴,≡)⍵:⍺⍺⍎⍺,'←⍵ ⋄ ⍺⍺' ⍝ non-⎕OR: use value
-         11::⍺⍺⍎⍺,'←⎕NS''⍵'' ⋄ ⍺⍺' ⍝ object?
+         4 11::⍺⍺⍎⍺,'←⎕NS''⍵'' ⋄ ⍺⍺' ⍝ object?
          ⍺⍺⍎⍺,'←⎕FX''⍵'' ⋄ ⍺⍺' ⍝ function?
      }¨/⍵
  }
