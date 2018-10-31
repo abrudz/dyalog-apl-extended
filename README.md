@@ -34,7 +34,7 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 | [TildeDiaeresis](TildeDiaeresis.dyalog)           |  `⍨`   |  🔵   | allows constant operand                                      |
 | [Times](Times.dyalog)                             |  `×`   |  🔵   | monadic queries case of letters (lower: `¯1`, title: `0`, upper: `1`) |
 | [UpShoe](UpShoe.dyalog)                           |  `∩`   |  🔵   | allows rank>1                                                |
-| [Upstile](Upstile.dyalog)                         |  `⌈`   |  🔵   | monadic lowercases letters                                   |
+| [Upstile](Upstile.dyalog)                         |  `⌈`   |  🔵   | monadic uppercases letters                                   |
 | [UpTack](UpTack.dyalog)                           |  `⊥`   |  🔶   | 2 as default left argument                                   |
 | [Vel](Vel.dyalog)                                 |  `∨`   |  🔶   | monadic is Descending Sort                                   |
 | [Wedge](Wedge.dyalog)                             |  `∧`   |  🔶   | monadic is Ascending Sort                                    |
