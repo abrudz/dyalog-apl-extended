@@ -10,9 +10,10 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 
 ### Content
 
-| Name                                              | Glyph  |  *   | Extension                                                    |
-| ------------------------------------------------- | :----: | :--: | ------------------------------------------------------------ |
-| [BackSlash](BackSlash.dyalog)                     |  `\`   |  🔶   | `∘.f` when dyadic                                            |
+| Name                                              | Glyph  |   *   | Extension                                                    |
+| ------------------------------------------------- | :----: | :---: | ------------------------------------------------------------ |
+| [BackSlash](BackSlash.dyalog)                     |  `\`   |  🔶   | `∘.f⍨∘⍉⍨` when dyadic, allows short and/or multiple left args |
+| [BackSlashBar](BackSlashBar.dyalog)               |  `⍀`   |  🔶   | `∘.f` when dyadic, allows short and/or multiple left args    |
 | [CircleDiaeresis](CircleDiaeresis.dyalog)         |  `⍥`   |  🔺   | Over and Depth                                               |
 | [DelDiaeresis](DelDiaeresis.dyalog)               |  `⍢`   |  🔺   | Under (a.k.a. Dual)                                          |
 | [Diaeresis](Diaeresis.dyalog)                     |  `¨`   |  🔵   | allows constant operand                                      |
@@ -29,6 +30,8 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 | [Rho](Rho.dyalog)                                 |  `⍴`   |  🔵   | allows omitting one dimension length with `¯1`               |
 | [RightShoeUnderbar](RightShoeUnderbar.dyalog)     |  `⊇`   |  🔺   | monadic discloses if scalar, dyadic indexes sanely           |
 | [Root](Root.dyalog)                               |  `√`   |  🔺   | (Square) Root                                                |
+| [Slash](Slash.dyalog)                             |  `/`   |  🔶   | allows short and/or multiple left args                       |
+| [SlashBar](SlashBar.dyalog)                       |  `⌿`   |  🔶   | allows short and/or multiple left args                       |
 | [Stile](Stile.dyalog)                             |  `\|`  |  🔵   | monadic normalises letters to lowercase (upper then lower)   |
 | [Tilde](Tilde.dyalog)                             |  `~`   |  🔵   | monadic allows probabilities, dyadic allows rank>1           |
 | [TildeDiaeresis](TildeDiaeresis.dyalog)           |  `⍨`   |  🔵   | allows constant operand                                      |
