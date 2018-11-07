@@ -5,7 +5,7 @@
      aaLen←≢⍺⍺
      0=≡⍺⍺:⍺⍺⌿⍵             ⍝ A⌿B
      1=≡⍺⍺:⍵⌿⍨⍺⍺↑⍨aaLen⌈⊃⍴⍵
-     aa←⍺⍺↑¨⍨aaLen↑0.1,⍨⍴⍵  ⍝ A1 A2 A3⌿B
+     aa←⍺⍺{⍵↑⍣(1=≡⍺)⊢⍺}¨aaLen↑0.1,⍨⍴⍵  ⍝ A1 A2 A3⌿B
      pairs←aa{⍺ ⍵}¨aaLen↑⍳≢⍴⍵
      Do←{
          (a k)←⍺
