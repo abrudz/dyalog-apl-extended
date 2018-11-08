@@ -30,8 +30,8 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 | [Rho](Rho.dyalog)                                 |  `⍴`   |  🔵   | allows omitting one dimension length with `¯1`               |
 | [RightShoeUnderbar](RightShoeUnderbar.dyalog)     |  `⊇`   |  🔺   | monadic discloses if scalar, dyadic indexes sanely           |
 | [Root](Root.dyalog)                               |  `√`   |  🔺   | (Square) Root                                                |
-| [Slash](Slash.dyalog)                             |  `/`   |  🔶   | allows short and/or multiple left args                       |
-| [SlashBar](SlashBar.dyalog)                       |  `⌿`   |  🔶   | allows short and/or multiple left args                       |
+| [Slash](Slash.dyalog)                             |  `/`   |  🔵   | allows short and/or multiple left args                       |
+| [SlashBar](SlashBar.dyalog)                       |  `⌿`   |  🔵   | allows short and/or multiple left args                       |
 | [Stile](Stile.dyalog)                             |  `\|`  |  🔵   | monadic normalises letters to lowercase (upper then lower)   |
 | [Tilde](Tilde.dyalog)                             |  `~`   |  🔵   | monadic allows probabilities, dyadic allows rank>1           |
 | [TildeDiaeresis](TildeDiaeresis.dyalog)           |  `⍨`   |  🔵   | allows constant operand                                      |
