@@ -5,7 +5,7 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 ### How to use
 
 ```
-]Load path/dyalog-apl-extensions/*
+]Load path/dyalog-apl-extended/*
 ```
 
 ### Content
