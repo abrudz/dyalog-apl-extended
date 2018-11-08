@@ -16,7 +16,7 @@
       :EndFor
       code←1↓⊃⎕NGET(srcFile↓⍨7×'file://'≡7↑srcFile)1
       glyphs←'\W'⎕R'\\&'⊢glyphs
-      from←'''[^'']*' '⍝.*' '`(.)' '⊂\[([^[]]+)\]',glyphs
+      from←'''[^'']*''' '⍝.*' '`(.)' '⊂\[([^[]]+)\]',glyphs
       to←'&' '&' '\1' '((\1)LeftShoe)',names
       ref←⎕FIX src,from ⎕R to⊢code
     ∇
