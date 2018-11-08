@@ -1,4 +1,4 @@
- TildeDiaeresis←{ ⍝ ¨ which allows constant operand
+ TildeDiaeresis←{ ⍝ ⍨ which allows constant operand
      ⍺←⊢
      3=⎕NC'⍺⍺':⍺ ⍺⍺⍨⍵
      ⍺⍺

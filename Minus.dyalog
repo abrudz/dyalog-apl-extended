@@ -4,7 +4,7 @@
      w⊣(∊w)←{
          2|⎕DR ⍵:-⍵ ⍝ numeric
          11::⍵      ⍝ fallback to no-op
-         ⍵∊a←0 1(819⌶)¨⍵:⊃a~⍵
+         1=⍵+.=a←0 1(819⌶)¨⍵:⊃a~⍵
          ⍵      ⍝ flip case
      }¨∊w←⍵
  }
