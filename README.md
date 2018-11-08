@@ -1,4 +1,4 @@
-# Extensions of Dyalog APL
+# Dyalog APL Extended
 
 Extended domains of existing primitives/quad-names, and a few new ones.
 
