@@ -18,7 +18,7 @@ export MAXWS=128M WSPATH=$DYALOG/ws
 
 {
 	echo "⎕PW←32767"
-	echo "'#'⎕NS('FIX'⍎⍨⎕FIX'file:///opt/apl-extended/FIX.dyalog')'file://$HOME/.bin.tio.dyalog'"
+	echo "'#'⎕NS('FIX'⍎⍨⎕FIX'file:///opt/apl-dyalog-extended/FIX.dyalog')'file://$HOME/.bin.tio.dyalog'"
 	cat .input.tio
 	echo
 } | $DYALOG/dyalog $FLAGS "$@"
