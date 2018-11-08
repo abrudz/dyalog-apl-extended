@@ -5,11 +5,9 @@
      aaLen←≢⍺⍺
      0=≡⍺⍺:⍺⍺⌿⍵             ⍝ A⌿B
      1=≡⍺⍺:⍵⌿⍨⍺⍺↑⍨aaLen⌈⊃⍴⍵
+     rank←≢⍴⍵
+     ⍬≡⍴⍺⍺:(rank⍴⍺⍺)∇∇ ⍵    ⍝ (⊂A1)⌿B
      aa←⍺⍺{⍵↑⍣(1=≡⍺)⊢⍺}¨aaLen↑0.1,⍨⍴⍵  ⍝ A1 A2 A3⌿B
-     pairs←aa{⍺ ⍵}¨aaLen↑⍳≢⍴⍵
-     Do←{
-         (a k)←⍺
-         a⌿[k]⍵
-     }
-     ⊃Do⌿pairs,⊂⍵
+     pairs←aa{⍺ ⍵}¨aaLen↑⍳rank
+     ⊃{⍵⌿[⊃⌽⍺]⍨⊃⍺}⌿pairs,⊂⍵
  }
