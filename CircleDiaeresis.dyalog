@@ -1,4 +1,4 @@
-﻿ CircleDiaeresis←{ ⍝ f⍥B and A⍥B: depth
+ CircleDiaeresis←{ ⍝ ⍥ over/depth
      ⍺←{⍵ ⋄ ⍺⍺}                 ⍝ monadic: pass-thorugh
      3=⎕NC'⍵⍵':(⍵⍵ ⍺)⍺⍺(⍵⍵ ⍵)   ⍝ f⍥g: over
      2=⎕NC'⍺⍺':⊢⍺((⍺⍺⊣⊢)∇∇ ⍵⍵)⍵  ⍝ A⍥B → (A⊣⊢)⍥B

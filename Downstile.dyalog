@@ -1,4 +1,4 @@
-﻿ Downstile←{ ⍝ ⌊ which allows lowercasing letters
+ Downstile←{ ⍝ ⌊ which allows lowercasing letters
      0≠⎕NC'⍺':⍺⌊⍵ ⍝ dyadic case
      2|⎕DR∊⍵:⌊⍵   ⍝ shortcut if all numeric
      w⊣(∊w)←{

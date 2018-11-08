@@ -1,4 +1,4 @@
-﻿ LeftShoe←{ ⍝ ⊂ which allows short left arguments and inserting/appending empty partitions
+ LeftShoe←{ ⍝ ⊂ which allows short left arguments and inserting/appending empty partitions
      0=⎕NC'⍺':⊂⍵ ⍝ monadic case
      len←⊃⌽⍴1/⍵
      old←len↑⍺

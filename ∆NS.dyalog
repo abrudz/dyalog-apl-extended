@@ -1,4 +1,4 @@
- ∆NS←{ ⍝ allows ⎕NS names values
+ ∆NS←{ ⍝ ⎕NS which allows names values
      ⍺←⊢ ⍝ default to unnamed namespace
      11::⎕SIGNAL 11
      (0=≢⍵)∨2≥|≡⍵:{_←⍵}⍣(2∊⎕NC'⍺')⊢⍺ ⎕NS ⍵ ⍝ default behaviour

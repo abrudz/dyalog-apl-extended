@@ -1,4 +1,4 @@
-﻿ RightShoeUnderbar←{ ⍝ disclose if scalar / ⍵[⍺]
+ RightShoeUnderbar←{ ⍝ ⊇ disclose if scalar / (⊂⍺)⌷⍵
      ×⎕NC'⍺':↑⍺⌷¨⊂⍵
      ⊃⍣(⍬≡⍴⍵)⊢⍵
  }

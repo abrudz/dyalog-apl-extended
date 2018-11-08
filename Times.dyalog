@@ -1,4 +1,4 @@
-﻿ Times←{ ⍝ × which allows querying letter case
+ Times←{ ⍝ × which allows querying letter case
      0≠⎕NC'⍺':⍺×⍵ ⍝ dyadic case
      2|⎕DR∊⍵:×⍵   ⍝ shortcut if all numeric
      w⊣(∊w)←{

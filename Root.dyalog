@@ -1,4 +1,4 @@
-﻿ Root←{ ⍝ (square) root
+ Root←{ ⍝ √ (square) root
      ⍺←2
      ⍵*÷⍺
  }

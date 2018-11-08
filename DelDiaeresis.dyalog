@@ -1,4 +1,4 @@
-﻿ DelDiaeresis←{ ⍝ Under a.k.a. Dual
+ DelDiaeresis←{ ⍝ ⍢ Under a.k.a. Dual
      0::⎕SIGNAL ⎕EN
      2 2≡⎕NC↑'⍺' '⍺⍺':⎕SIGNAL⊂('EN' 2)('Message' 'Array left argument conflicts with array left operand')
      ⍺←{⍵ ⋄ ⍺⍺}      ⍝ no ⍺: pass through

@@ -1,4 +1,4 @@
-﻿ Upstile←{ ⍝ ⌈ which allows uppercasing letters
+ Upstile←{ ⍝ ⌈ which allows uppercasing letters
      0≠⎕NC'⍺':⍺⌈⍵ ⍝ dyadic case
      2|⎕DR∊⍵:⌈⍵   ⍝ shortcut if all numeric
      w⊣(∊w)←{

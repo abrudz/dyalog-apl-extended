@@ -1,4 +1,4 @@
-﻿ ∆C←{ ⍝ Case-insensitive/case-fold
+ ∆C←{ ⍝ ⎕C Case-insensitive/case-fold
      F←{⍺←0 ⋄ 1=≡⍺ ⍵ ⍵:⍺(819⌶)⍵ ⋄ ⍺ ∇¨⍵} ⍝ Fold
      N←F 1∘F ⍝ Normalise
      s←⎕NC↑'⍺' '⍺⍺' ⍝ syntax

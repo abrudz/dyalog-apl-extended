@@ -1,4 +1,4 @@
-﻿ Minus←{ ⍝ - which allows flipping character case
+ Minus←{ ⍝ - which allows flipping character case
      0≠⎕NC'⍺':⍺-⍵ ⍝ dyadic case
      2|⎕DR∊⍵:-⍵   ⍝ shortcut if all numeric
      w⊣(∊w)←{

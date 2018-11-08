@@ -1,4 +1,4 @@
-﻿ Stile←{ ⍝ | which allows normalising letters to lowercase
+ Stile←{ ⍝ | which allows normalising letters to lowercase
      0≠⎕NC'⍺':⍺|⍵ ⍝ dyadic case
      2|⎕DR∊⍵:|⍵   ⍝ shortcut if all numeric
      w⊣(∊w)←{

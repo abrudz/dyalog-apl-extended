@@ -1,0 +1,23 @@
+	"apl-extended": {
+		"categories": [
+			"practical"
+		],
+		"encoding": "SBCS",
+		"link": "https://github.com/abrudz/dyalog-apl-extended",
+		"name": "APL (Dyalog Extended)",
+		"prettify": "apl",
+		"tests": {
+			"helloWorld": {
+				"request": [
+					{
+						"command": "F",
+						"payload": {
+							".code.tio": "⎕←'Hello, World!'"
+						}
+					}
+				],
+				"response": "Hello, World!"
+			}
+		},
+		"update": "git"
+	},
