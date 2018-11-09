@@ -23,16 +23,16 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 | [DownTack](DownTack.dyalog)                       |  `⊤`   |  🔶   | 2s as default left argument                                  |
 | [Ellipsis](Ellipsis.dyalog)                       |  `…`   |  🔺   | fill sequence gaps ([dfns's `to⍤1`](http://dfns.dyalog.com/n_to.htm)) |
 | [EpsilonUnderbar](EpsilonUnderbar.dyalog)         |  `⍷`   |  🔶   | monadic is Type `∊` with `⎕ML←0`                             |
-| [GreaterThan](GreaterThan.dyalog)                 |  `>`   |  🔺   | with TAO and default to 0 as left arg                        |
-| [GreaterThanOrEqualTo](GreaterThanOrEqualTo.dyalog) |  `≥` |  🔺   | with TAO and default to 0 as left arg                        |
+| [GreaterThan](GreaterThan.dyalog)                 |  `>`   |  🔶   | with TAO and default to 0 as left arg                        |
+| [GreaterThanOrEqualTo](GreaterThanOrEqualTo.dyalog) |  `≥` |  🔶   | with TAO and default to 0 as left arg                        |
 | [Iota](Iota.dyalog)                               |  `⍳`   |  🔵   | Unicode version of [dfns's `iotag`](http://dfns.dyalog.com/n_iotag.htm) |
 | [IotaUnderbar](IotaUnderbar.dyalog)               |  `⍸`   |  🔵   | allows duplicates/non-Booleans                               |
 | [IotaUnderbarInverse](IotaUnderbarInverse.dyalog) | `⍸⍣¯1` |  🔵   | given `r`, finds `n` so that `r≡⍸n`                          |
 | [JotDiaeresis](JotDiaeresis.dyalog)               |  `⍤`   |  🔵   | allows constant left operand, Atop with function right operand |
 | [LeftShoe](LeftShoe.dyalog)                       |  `⊂`   |  🔵   | allows short left arguments and each left argument element says how many partitions to begin |
 | [LeftShoeWithAxis](LeftShoeWithAxis.dyalog)       | `⊂[k]` |  🔵   | as above, but called with left operand                       |
-| [LessThan](LessThan.dyalog)                       |  `<`   |  🔺   | with TAO and default to 0 as left arg                        |
-| [LessThanOrEqualTo](LessThanOrEqualTo.dyalog)     |  `≤`   |  🔺   | with TAO and default to 0 as left arg                        |
+| [LessThan](LessThan.dyalog)                       |  `<`   |  🔶   | with TAO and default to 0 as left arg                        |
+| [LessThanOrEqualTo](LessThanOrEqualTo.dyalog)     |  `≤`   |  🔶   | with TAO and default to 0 as left arg                        |
 | [Minus](Minus.dyalog)                             |  `-`   |  🔵   | monadic flips letter case                                    |
 | [Plus](Plus.dyalog)                               |  `+`   |  🔵   | monadic converts letters to title case when possible         |
 | [Rho](Rho.dyalog)                                 |  `⍴`   |  🔵   | allows omitting one dimension length with `¯1`               |
