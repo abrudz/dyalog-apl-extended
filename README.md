@@ -22,8 +22,8 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 | [Downstile](Downstile.dyalog)                     |  `⌊`   |  🔵   | monadic lowercases letters                                   |
 | [DownTack](DownTack.dyalog)                       |  `⊤`   |  🔶   | 2s as default left argument                                  |
 | [EpsilonUnderbar](EpsilonUnderbar.dyalog)         |  `⍷`   |  🔶   | monadic is Type `∊` with `⎕ML←0`                             |
-| [GreaterThan](GreaterThan.dyalog)                 |  `<`   |  🔺   | with TAO and default to 0 as left arg                        |
-| [GreaterThanOrEqualTo](GreaterThanOrEqualTo.dyalog) |  `≤` |  🔺   | with TAO and default to 0 as left arg                        |
+| [GreaterThan](GreaterThan.dyalog)                 |  `>`   |  🔺   | with TAO and default to 0 as left arg                        |
+| [GreaterThanOrEqualTo](GreaterThanOrEqualTo.dyalog) |  `≥` |  🔺   | with TAO and default to 0 as left arg                        |
 | [Iota](Iota.dyalog)                               |  `⍳`   |  🔵   | Unicode version of [dfns.dyalog.com/n_iotag.htm](http://dfns.dyalog.com/n_iotag.htm) |
 | [IotaUnderbar](IotaUnderbar.dyalog)               |  `⍸`   |  🔵   | allows duplicates/non-Booleans                               |
 | [IotaUnderbarInverse](IotaUnderbarInverse.dyalog) | `⍸⍣¯1` |  🔵   | given `r`, finds `n` so that `r≡⍸n`                          |
