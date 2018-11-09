@@ -29,7 +29,7 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 | [IotaUnderbar](IotaUnderbar.dyalog)               |  `⍸`   |  🔵   | allows duplicates/non-Booleans                               |
 | [IotaUnderbarInverse](IotaUnderbarInverse.dyalog) | `⍸⍣¯1` |  🔵   | given `r`, finds `n` so that `r≡⍸n`                          |
 | [JotDiaeresis](JotDiaeresis.dyalog)               |  `⍤`   |  🔵   | allows constant left operand, Atop with function right operand |
-| [LeftShoe](LeftShoe.dyalog)                       |  `⊂`   |  🔵   | allows short left arguments and each left argument element says how many partitions to begin |
+| [LeftShoe](LeftShoe.dyalog)                       |  `⊂`   |  🔵   | allows partitioning along multiple trailing axes, with short ⍺s, and inserting/appending empty partitions |
 | [LeftShoeWithAxis](LeftShoeWithAxis.dyalog)       | `⊂[k]` |  🔵   | as above, but called with left operand                       |
 | [LessThan](LessThan.dyalog)                       |  `<`   |  🔶   | with TAO and default to 0 as left arg                        |
 | [LessThanOrEqualTo](LessThanOrEqualTo.dyalog)     |  `≤`   |  🔶   | with TAO and default to 0 as left arg                        |
