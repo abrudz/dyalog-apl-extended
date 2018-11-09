@@ -21,7 +21,7 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 | [DownShoe](DownShoe.dyalog)                       |  `∪`   |  🔵   | allows rank>1                                                |
 | [Downstile](Downstile.dyalog)                     |  `⌊`   |  🔵   | monadic lowercases letters                                   |
 | [DownTack](DownTack.dyalog)                       |  `⊤`   |  🔶   | 2s as default left argument                                  |
-| [Ellipsis](Ellipsis.dyalog)                       |  `…`   |  🔺   | fill sequence gaps ([dfns's `to`](http://dfns.dyalog.com/n_to.htm)) |
+| [Ellipsis](Ellipsis.dyalog)                       |  `…`   |  🔺   | fill sequence gaps ([dfns's `to⍤1`](http://dfns.dyalog.com/n_to.htm)) |
 | [EpsilonUnderbar](EpsilonUnderbar.dyalog)         |  `⍷`   |  🔶   | monadic is Type `∊` with `⎕ML←0`                             |
 | [GreaterThan](GreaterThan.dyalog)                 |  `>`   |  🔺   | with TAO and default to 0 as left arg                        |
 | [GreaterThanOrEqualTo](GreaterThanOrEqualTo.dyalog) |  `≥` |  🔺   | with TAO and default to 0 as left arg                        |
