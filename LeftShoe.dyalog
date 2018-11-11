@@ -1,4 +1,5 @@
  LeftShoe←{ ⍝ ⊂ with partitioning along multiple trailing axes, with short ⍺s, and inserting/appending empty partitions
+     0=⎕NC'⍺':⊂⍵
      0=≡⍺:⍺⊂⍵               ⍝ A⊂B
      aLen←-≢⍺
      1=≡⍺:⍵⊂⍨⍺↑⍨-aLen⌊-⊃⌽⍴⍵ ⍝ A1⊂B
