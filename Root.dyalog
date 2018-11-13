@@ -1,4 +1,5 @@
- Root←{ ⍝ √ (square) root
+﻿ Root←{ ⍝ √ (square) root
+     0≠⎕NS'⍺':⍵*÷⍺
      ⍺←2
      ⍵*÷⍺
  }
