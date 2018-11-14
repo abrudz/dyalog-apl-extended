@@ -10,14 +10,25 @@
           glyph←'⍝ (\W\S*)'⎕S'\1'⊃code
           :If ≢glyph
               glyphs,←glyph
-              names,←⊂1⌽'  ',2⊃⎕NPARTS file
+              names,←2⌷⎕NPARTS file
               src,←code
           :EndIf
       :EndFor
       code←1↓⊃⎕NGET(srcFile↓⍨7×'file://'≡7↑srcFile)1
-      glyphs←'⍣' '\W' '\w\b'⎕R' *⍣ *' '\\&' '&\\b'⊢glyphs
-      from←'''[^'']*''' '⍝.*' '`(.)' '⊂\[([^[]]+)\]',glyphs
-      to←'&' '&' '\1' '((\1)LeftShoe)',names
-      ref←⎕FIX src,from ⎕R to⊢code
+      ref←⎕FIX glyphs To names⊢src,code
     ∇
+
+      To←{
+          mask←×⊃∘⍴¨⍺⍺
+          from←'''[^'']*''' '⍝.*' '`(.)' '⊂\[([^[]]+)\]' '⊇\[([^[]]+)\]','⍣' '\W' '\w\b'⎕R' *⍣ *' '\\&' '&\\b'⊢mask/⍺⍺
+          to←'&' '&' '\1' '((\1)LeftShoeWithAxis)' '((\1)RightShoeUnderbarWithAxis)','^|$'⎕R' '⊢mask/⍵⍵
+          from ⎕R to⊢⍵
+      }
+
+      Execute←{
+          names←##.⎕NL-3 4
+          glyphs←⊃¨'⍝ (\W\S*)'⎕S'\1'¨⊃∘##.⎕NR¨names
+          ns←##.⎕NS names
+          ns⍎glyphs To names⊢⍵
+      }
 :EndNamespace
