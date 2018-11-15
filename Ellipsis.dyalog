@@ -1,4 +1,6 @@
- Ellipsis←{⍺{⎕IO←0 ⍝ … Fill sequence gap (http://dfns.dyalog.com/n_to.htm)
+ Ellipsis←{ ⍝ … Fill sequence gap (http://dfns.dyalog.com/n_to.htm)
+     ⍺←⊢
+     ⍺{⎕IO←0
          Char←0 2∊⍨10|⎕DR                                  ⍝ character?
          end←⊃⍵                                            ⍝ of sub-sequence
          tail←1↓⍵                                          ⍝ to be appended

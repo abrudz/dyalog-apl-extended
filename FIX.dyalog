@@ -1,4 +1,15 @@
 :Namespace Extended
+    ∇ Repl;input;ns
+      ns←##.(⎕NS ⎕NL-3 4)
+      :While '→'≢⊃⌽' '~⍨input←⍞⊣⍞←6⍴''
+          :Trap 0
+              ⎕←ns Execute input
+          :Else
+              ⎕←↑ns.⎕DMX.DM
+          :EndTrap
+      :EndWhile
+    ∇
+
     ∇ {ref}←FIX srcFile;files;file;src;code;glyph;glyphs;names;from;to;loaded;pattern
       src←,⊂':namespace'
       loaded←5177⌶⍬
@@ -28,7 +39,8 @@
       Execute←{
           names←##.⎕NL-3 4
           glyphs←⊃¨'⍝ (\W\S*)'⎕S'\1'¨⊃∘##.⎕NR¨names
-          ns←##.⎕NS names
-          ns⍎glyphs To names⊢⍵
+          ⍺←##.⎕NS names
+          85::⍬⊤⍬
+          1 ⍺.(85⌶)glyphs To names⊢⍵
       }
 :EndNamespace
