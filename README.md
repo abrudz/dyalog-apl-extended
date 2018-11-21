@@ -1,6 +1,6 @@
 # [Dyalog APL](https://www.dyalog.com/) Extended
 
-Extended domains of existing primitives/quad-names, and a few new ones.
+Extended domains of existing primitives/quad-names, and a few new ones. Requires Dyalog APL version 16.0 or higher.
 
 ### How to use
 
@@ -8,9 +8,15 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 ]Load path/dyalog-apl-extended/*
 ```
 
+or¹⁷
+
+```
+]Link ns path/dyalog-apl-extended
+```
+
 ### Content
 
-| Name                                              | Glyph  |   *   | Extension                                                    |
+| Name                                              | Glyph  |   Type*   | Extension                                                    |
 | ------------------------------------------------- | :----: | :---: | ------------------------------------------------------------ |
 | [At](At.dyalog)                                   |  `@`   |  🔵   | prefix-friendly                                              |
 | [BackSlash](BackSlash.dyalog)                     |  `\`   |  🔶   | `∘.f⍨∘⍉⍨` when dyadic, allows short and/or multiple left args |
@@ -56,5 +62,11 @@ Extended domains of existing primitives/quad-names, and a few new ones.
 | [∆NS](∆NS.dyalog)                                 |  `⎕NS` |  🔵   | allows `⎕NS names values` (tries to resolve `⎕OR`s)          |
 | [∆NSinverse](∆NSinverse.dyalog)                   |`⎕NS⍣¯1`|  🔺   | allows `(names values)←⎕NS⍣¯1⊢ns` (returns `⎕OR`s for ns/fns) |
 | [∆UCS](∆UCS.dyalog)                               | `⎕UCS` |  🔵   | scalar when monadic                                          |
+| [∆XDN](∆XDN.dyalog) | `⎕XDN` | 🔺 | convert day numbers (`⎕NULL` for GMT¹⁸) to strings¹⁸ (dyadic) or time stamps (monadic) |
+| [∆XTS](∆XTS.dyalog) | `⎕XTS` | 🔺 | convert time stamps (`0` for GMT¹⁸) to strings¹⁸ (dyadic) or day numbers (monadic) |
 
-* 🔺 means new feature 🔶 means added valence 🔵 means expanded domain
+\* 🔺 means new feature 🔶 means added valence 🔵 means expanded domain
+
+¹⁷ Requires Dyalog APL version 17.0
+
+¹⁸ Requires Dyalog APL version 18.0
