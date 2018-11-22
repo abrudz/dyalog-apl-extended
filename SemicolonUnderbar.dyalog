@@ -1,0 +1,4 @@
+ SemicolonUnderbar←{⍝ ⍮ (half) pair
+     ⍺←{⍵ ⋄ ⍺⍺}
+     (⊂⍺),(⊂⍵)
+ }

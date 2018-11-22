@@ -1,4 +1,4 @@
- r←{fmt}∆XDN y
+ r←{fmt}∆XDN y ⍝ ⎕XDN day number(s) → time stamp(s)/text
  :Trap 0
      :If 2<≢⍴y ⍝ too high rank
      :OrIf (2=≢⍴y)∧(1≠⊃⌽⍴y) ⍝ wide matrix
@@ -12,7 +12,7 @@
              ⎕SIGNAL⊂('EN' 11)('Message' 'Conversion from text requires a left argument')
          :Else ⍝ scalar: IDN → ⎕TS
              r←{
-                 ⎕NULL≡⍵:123⌶0 ⍝ null: GMT already in ⎕TS form
+                 ⎕NULL≡⍵:123⌶0 ⍝ null: UTC already in ⎕TS form
                  date←3↑2 ⎕NQ #'IDNToDate'⍵ ⍝ this only gives date (and day of week)
                  time←⌊0 60 60 1000⊤86400000×1|⍵ ⍝ calculate time of day from fractional part
                  date,time
