@@ -46,6 +46,7 @@ or¹⁷
 | [RightShoeUnderbar](RightShoeUnderbar.dyalog)     |  `⊇`   |  🔺   | monadic discloses if scalar, dyadic indexes sanely           |
 | [RightShoeUnderbarWithAxis](RightShoeUnderbarWithAxis.dyalog) | `⊇[k]` | 🔺 | as above, but called with left operand              |
 | [Root](Root.dyalog)                               |  `√`   |  🔺   | (Square) Root                                                |
+| [SemicolonUnderbar](SemicolonUnderbar.dyalog)     |  `⍮`   |  🔺   | (Half) Pair; use `↑⍤⍮` to add axis                           |
 | [Slash](Slash.dyalog)                             |  `/`   |  🔵   | allows short and/or multiple left args                       |
 | [SlashBar](SlashBar.dyalog)                       |  `⌿`   |  🔵   | allows short and/or multiple left args                       |
 | [StarDiaeresis](StarDiaeresis.dyalog)             |  `⍣`   |  🔵   | allows non-scalar right operand                              |
