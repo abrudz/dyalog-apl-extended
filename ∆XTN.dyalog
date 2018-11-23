@@ -14,10 +14,11 @@
          :Else ⍝ scalar: IDN → ⎕TS
              r←{
                  ⎕NULL≡⍵:123⌶0 ⍝ null: UTC already in ⎕TS form
-                 date←3↑2 ⎕NQ #'IDNToDate'⍵ ⍝ this only gives date (and day of week)
-                 time←⌊0 60 60 1000⊤86400000×1|⍵ ⍝ calculate time of day from fractional part
+                 xidn←(¯25568+÷∘5184000)⍣(type≡'DCF')⊢⍵
+                 date←3↑2 ⎕NQ #'IDNToDate'xidn ⍝ this only gives date (and day of week)
+                 time←⌊0 60 60 1000⊤86400000×1|xidn ⍝ calculate time of day from fractional part
                  date,time
-             }(¯25568+÷∘5184000)⍣(type≡'DCF')⊢y
+             }y
          :EndIf
      :Else ⍝ DYADIC: fmt,text → IDN; fmt,IDN → text
          r←(5184000×25568∘+)⍣(type≡'DCF')⊢fmt ∆XTS ∆XTN y

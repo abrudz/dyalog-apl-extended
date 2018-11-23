@@ -35,9 +35,7 @@
      Assert'tst' 'tst'M'tst' 'tst'∆XTN d11     ⍝ vectors-scalar
      Assert'tst' 'tst'M'tst' 'tst'∆XTN d11 d11 ⍝ vectors-vectors
 
-     Assert(2 3⍴'tst')M(↑'tst' 'tst')∆XTN d11       ⍝ matrix-scalar
      Assert'tst' 'tst'M'tst'∆XTN d11 d11            ⍝ vector-vector
-     Assert(2 3⍴'tst')M(↑'tst' 'tst')∆XTN(⍪d11 d11) ⍝ matrix-matrix
      r←1
  :Else
      r←0

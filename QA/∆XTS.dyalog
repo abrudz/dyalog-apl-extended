@@ -26,8 +26,8 @@
 
      Assert(,'t')M't'∆XTS 0            ⍝ scalar-scalar null
      Assert'tst'M'tst'∆XTS 0           ⍝ vector-scalar null
-     Assert(,'t')M't'∆XTS⊃t60         ⍝ scalar-scalar
-     Assert'tst'M'tst'∆XTS⊃t60        ⍝ vector-scalar
+     Assert(,'t')M't'∆XTS⊃t60          ⍝ scalar-scalar
+     Assert'tst'M'tst'∆XTS⊃t60         ⍝ vector-scalar
      Assert(,'t')M't'∆XTS ⍬            ⍝ scalar-empty vector
      Assert'tst'M'tst'∆XTS ⍬           ⍝ vector-empty vector
      Assert(,'t')'t'∆XTS t60           ⍝ scalar-vector
@@ -38,12 +38,8 @@
      Assert'tst' 'tst'M'tst'∆XTS t60 t60       ⍝ vector-vectors
      Assert'tst' 'tst'M'tst' 'tst'∆XTS t60 t60 ⍝ vectors-vectors
 
-     Assert(↑'tst' 'tst')M(↑'tst' 'tst')∆XTS t60       ⍝ matrix-vector
-     Assert(↑'tst' 'tst')M'tst'∆XTS(↑t60 t60)          ⍝ vector-matrix
-     Assert(↑'tst' 'tst')M(↑'tst' 'tst')∆XTS(↑t60 t60) ⍝ matrix-matrix
-
-     Assert'tst' 'tst'M(↑'tst' 'tst')∆XTS t60 t60  ⍝ matrix-vectors
-     Assert(↑'tst' 'tst')M('tst' 'tst')∆XTS(↑t60 t60) ⍝ vectors-matrix
+     Assert'tst' 'tst'M'tst'∆XTS(↑t60 t60)         ⍝ vector-matrix
+     Assert'tst' 'tst'M('tst' 'tst')∆XTS(↑t60 t60) ⍝ vectors-matrix
      r←1
  :Else
      r←0
