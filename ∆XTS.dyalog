@@ -1,4 +1,4 @@
- r←{fmt}∆XTS y;All7;y2;mat;cft ⍝ ⎕XTS time stamp(s) → day number(s)/text(s)
+ r←{fmt}∆XTS y;All7;y2;mat;type ⍝ ⎕XTS time stamp(s) → day number(s)/text(s)
  All7←{ ⍝ Expand date to ⎕TS's 7 elements
      0=⊃⍵:123⌶0          ⍝ null is UTC+0
      ⍵,0 1 1 0 0 0 0↓⍨≢⍵ ⍝ extend to Year Jan 1st, 00:00:00.000
@@ -7,7 +7,7 @@
      :If 2<(≢⍴×|∘≡)y
          ⎕SIGNAL⊂('EN' 16)('Message' 'Right argument must be scalar, vector, vector of vectors, or matrix')
      :EndIf
-     cft←0{×⎕NC ⍵:⍎⍵ ⋄ ⍺}'⎕SE.VariantOptions.ComponentFileTime'
+     type←'IDN'{×⎕NC ⍵:⍎⍵ ⋄ ⍺}'⎕SE.VariantOptions.NumberType'
      mat←2=≢⍴y
      :If 900⌶⍬ ⍝ MONADIC: ⎕TS → IDN
          :If 2=(≢∘⍴×|∘≡)y ⍝ multi
@@ -15,7 +15,7 @@
          :ElseIf ''≡0⍴y ⍝ text → ⎕TS
              ⎕SIGNAL⊂('EN' 16)('Message' 'Conversion from text requires format pattern as left argument')
          :Else ⍝ normal vector: ⎕TS → IDN
-             r←(5184000×25568∘+)⍣cft{
+             r←(5184000×25568∘+)⍣(type≡'DCF'){
                  y7←All7 ⍵
                  date←2 ⎕NQ #'DateToIDN'y7 ⍝ ⎕TS → integer IDN
                  time←86400000÷⍨0 60 60 1000⊥¯4↑y7 ⍝ hr:min:sec.ms → ms
