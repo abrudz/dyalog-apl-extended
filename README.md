@@ -29,19 +29,19 @@ or¹⁷
 | [DownTack](DownTack.dyalog)                       |  `⊤`   |  🔶   | 2s as default left argument                                  |
 | [Ellipsis](Ellipsis.dyalog)                       |  `…`   |  🔺   | fill sequence gaps ([dfns's `to⍤1`](http://dfns.dyalog.com/n_to.htm)) |
 | [EpsilonUnderbar](EpsilonUnderbar.dyalog)         |  `⍷`   |  🔶   | monadic is Type `∊` with `⎕ML←0`                             |
-| [GreaterThan](GreaterThan.dyalog)                 |  `>`   |  🔶   | with TAO and default to 0 as left arg                        |
-| [GreaterThanOrEqualTo](GreaterThanOrEqualTo.dyalog) |  `≥` |  🔶   | with TAO and default to 0 as left arg                        |
-| [infinity](infinity.dyalog) | `∞` | 🔺 | largest integer (for use with `⍤` and `⍣`) |
+| [GreaterThan](GreaterThan.dyalog)                 |  `>`   |  🔶   | with TAO; monad: is-strictly-negative                        |
+| [GreaterThanOrEqualTo](GreaterThanOrEqualTo.dyalog) |  `≥` |  🔶   | with TAO; monad: is non-positive                             |
+| [infinity](infinity.dyalog)                       |  `∞`   |  🔺   | largest integer (for use with `⍤` and `⍣`)                   |
 | [Iota](Iota.dyalog)                               |  `⍳`   |  🔵   | Unicode version of [dfns's `iotag`](http://dfns.dyalog.com/n_iotag.htm) |
 | [IotaUnderbar](IotaUnderbar.dyalog)               |  `⍸`   |  🔵   | allows duplicates/non-Booleans                               |
 | [IotaUnderbarInverse](IotaUnderbarInverse.dyalog) | `⍸⍣¯1` |  🔵   | given `r`, finds `n` so that `r≡⍸n`                          |
 | [JotDiaeresis](JotDiaeresis.dyalog)               |  `⍤`   |  🔵   | allows constant left operand, Atop with function right operand |
 | [LeftShoe](LeftShoe.dyalog)                       |  `⊂`   |  🔵   | allows partitioning along multiple trailing axes, with short ⍺s, and inserting/appending empty partitions |
 | [LeftShoeWithAxis](LeftShoeWithAxis.dyalog)       | `⊂[k]` |  🔵   | as above, but called with left operand                       |
-| [LessThan](LessThan.dyalog)                       |  `<`   |  🔶   | with TAO and default to 0 as left arg                        |
-| [LessThanOrEqualTo](LessThanOrEqualTo.dyalog)     |  `≤`   |  🔶   | with TAO and default to 0 as left arg                        |
+| [LessThan](LessThan.dyalog)                       |  `<`   |  🔶   | with TAO; monad: is-strictly-positive                        |
+| [LessThanOrEqualTo](LessThanOrEqualTo.dyalog)     |  `≤`   |  🔶   | with TAO ; monad: is-non-negative                            |
 | [Minus](Minus.dyalog)                             |  `-`   |  🔵   | monadic flips letter case                                    |
-| [negativeInfinity](negativeInfinity.dyalog) | `¯∞` | 🔺 | smallest integer (for use with `⍣`) |
+| [negativeInfinity](negativeInfinity.dyalog)       |  `¯∞`  |  🔺   | smallest integer (for use with `⍣`)                          |
 | [Plus](Plus.dyalog)                               |  `+`   |  🔵   | monadic converts letters to title case when possible         |
 | [QuadDiamond](QuadDiamond.dyalog)                 |  `⌺`   |  🔶   | auto-extended `⍵⍵`, allows small `⍵`, optional edge spec(s) ([0:Zero; 1:Repl; 2:Rev; 3:Mirror; 4:Wrap](http://web.science.mq.edu.au/~len/preprint/hamey-dicta2015-functional-border.pdf#page=3); -:Twist) with masks as operand's `⍺` |
 | [QuadColon](QuadColon.dyalog) | `⍠` | 🔵 | also applies to `∆XDN` and `∆XTN` |
@@ -56,7 +56,7 @@ or¹⁷
 | [Stile](Stile.dyalog)                             |  `\|`  |  🔵   | monadic normalises letters to lowercase (upper then lower)   |
 | [Tilde](Tilde.dyalog)                             |  `~`   |  🔵   | monadic allows probabilities, dyadic allows rank>1           |
 | [TildeDiaeresis](TildeDiaeresis.dyalog)           |  `⍨`   |  🔵   | allows constant operand                                      |
-| [Times](Times.dyalog)                             |  `×`   |  🔵   | set/query letter case (lower: `¯1`, title: `0`, upper: `1`) |
+| [Times](Times.dyalog)                             |  `×`   |  🔵   | set/query letter case (lower: `¯1`, title: `0`, upper: `1`)  |
 | [UpShoe](UpShoe.dyalog)                           |  `∩`   |  🔵   | allows rank>1                                                |
 | [Upstile](Upstile.dyalog)                         |  `⌈`   |  🔵   | monadic uppercases letters                                   |
 | [UpTack](UpTack.dyalog)                           |  `⊥`   |  🔶   | 2 as default left argument                                   |
