@@ -1,6 +1,6 @@
  r←{fmt}∆XTS y;All7;y2;mat;type ⍝ ⎕XTS time stamp(s) → day number(s)/text(s)
  All7←{ ⍝ Expand date to ⎕TS's 7 elements
-     0=⊃⍵:123⌶0          ⍝ null is UTC+0
+     0∊3↑⍵:123⌶60⊥3↓5↑⍵  ⍝ null is UTC+hh:mm
      ⍵,0 1 1 0 0 0 0↓⍨≢⍵ ⍝ extend to Year Jan 1st, 00:00:00.000
  }
  :Trap 0
