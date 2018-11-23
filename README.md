@@ -66,7 +66,7 @@ or¹⁷
 | [∆NS](∆NS.dyalog)                                 |  `⎕NS` |  🔵   | allows `⎕NS names values` (tries to resolve `⎕OR`s)          |
 | [∆NSinverse](∆NSinverse.dyalog)                   |`⎕NS⍣¯1`|  🔺   | allows `(names values)←⎕NS⍣¯1⊢ns` (returns `⎕OR`s for ns/fns) |
 | [∆UCS](∆UCS.dyalog)                               | `⎕UCS` |  🔵   | scalar when monadic                                          |
-| [∆XTN](∆XTN.dyalog) | `⎕XDN` | 🔺 | convert time numbers (`⎕NULL` for UTC¹⁸) to text¹⁸ (dyadic) or time stamps (monadic) |
+| [∆XTN](∆XTN.dyalog) | `⎕XTN` | 🔺 | convert time numbers (`⎕NULL` for UTC¹⁸) to text¹⁸ (dyadic) or time stamps (monadic) |
 | [∆XTS](∆XTS.dyalog) | `⎕XTS` | 🔺 | convert time stamps (`0` for UTC¹⁸) to text¹⁸ (dyadic) or time numbers (monadic) |
 
 \* 🔺 means new feature 🔶 means added valence 🔵 means expanded domain
