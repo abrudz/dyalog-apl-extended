@@ -14,12 +14,16 @@
          :EndIf
          'VariantOptions'⎕SE.⎕NS ⍬
          {⎕SE.VariantOptions.⍎⍺,'←⍵'}/¨⊂⍣(3>|≡opts)⊢opts
-         r←x f y
+         :Trap 0
+             r←x f y
+         :Else
+             →RESIGNAL
+         :EndTrap
          ⎕SE.⎕EX'VariantOptions'
          :If ≢prev
              'VariantOptions'⎕SE.⎕NS prev
          :EndIf
      :Else
-         ⎕SIGNAL⊂⎕DMX.(('EN'EN)('Message'Message))
+RESIGNAL:⎕SIGNAL⊂⎕DMX.(('EN'EN)('Message'Message))
      :EndIf
  :EndTrap
