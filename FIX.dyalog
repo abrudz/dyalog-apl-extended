@@ -3,9 +3,16 @@
       ns←##.(⎕NS ⎕NL-3 4)
       :While '→'≢⊃⌽' '~⍨input←⍞⊣⍞←6⍴''
           :Trap 0
-              ⎕←ns Execute input
+              :Select ⊃input~' '
+              :Case ']'
+                  ⎕←⎕SE.UCMD input
+              :Case ')'
+                  ⎕←ns Execute'⎕'@(input⍳')')⊢input
+              :Else
+                  ⎕←ns Execute input
+              :EndSelect
           :Else
-              ⎕←↑ns.⎕DMX.DM
+              ⎕←↑ns.⎕DMX.((⊂1↓(⊃DM),(Message≢'')/': ',Message),1↓DM)
           :EndTrap
       :EndWhile
     ∇
