@@ -3,8 +3,8 @@
 
  All7←{ ⍝ Expand date to ⎕TS's 7 elements
      ×⊃⍵:⍵,0 1 1 0 0 0 0↓⍨≢⍵ ⍝ extend to Year Jan 1st, 00:00:00.000
-     ∆XTN(∆XTS 123⌶0)+1440÷⍨60⊥3↓5↑⍵ ⍝ null is UTC+hh:mm
-
+     IDN←QuadColon'NumberType' 'IDN'
+     ∆XTN IDN(∆XTS IDN 123⌶0)+1440÷⍨60⊥3↓5↑⍵ ⍝ null is UTC+hh:mm
  }
  :Trap 0
      :If 2<(≢⍴×|∘≡)y
@@ -20,7 +20,7 @@
              ⎕SIGNAL⊂('EN' 16)('Message' 'Conversion from text requires format pattern as left argument')
          :Else ⍝ normal vector: ⎕TS → IDN
              y7←All7 y
-             :If type≡'Excel'
+             :If (⊂type)∊'Excel' '123'
                  :If 1900>⊃y7
                      ⎕SIGNAL⊂('EN' 11)('Message' 'Excel dates must be in the year 1900 or later')
                  :EndIf
@@ -34,10 +34,12 @@
              :Select type
              :Case 'DCF'
                  r←5184000×25568+r
-             :Case 'NET'
+             :CaseList 'NET' '.NET'
                  r←(⌊+1||)r+1-(¯2<r)∧(r<¯1)
-             :Case 'Excel'
+             :CaseList 'Excel' '123'
                  r←r+(r≥59)-1900 2 28≡3↑All7 y
+             :Case 'UNIX'
+                 r←86400×r-25568
              :Else ⍝ "IDN"
              :EndSelect
          :EndIf

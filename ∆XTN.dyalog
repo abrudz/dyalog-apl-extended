@@ -21,20 +21,22 @@
                  :Case 'DCF'
                      y2←¯25568+y÷5184000
                      y2←y2-(y2<0)∧(0≠1|y2)
-                 :Case 'NET'
+                 :Case 'NET' '.NET'
                      y2←¯1+(⌊y)+(1||y)-(×y)×0=⌊y
-                 :Case 'Excel'
+                 :CaseList 'Excel' '123'
                      :If y<0
                          ⎕SIGNAL⊂('EN' 11)('Message' 'Excel dates must be in the year 1900 or later')
                      :EndIf
                      y2←y-59<⌊y
+                 :Case 'UNIX'
+                     y2←25568+y÷86400
                  :Else ⍝ "IDN"
                      y2←y-(y<0)∧(0≠1|y)
                  :EndSelect
                  date←3↑2 ⎕NQ #'IDNToDate'y2 ⍝ this only gives date (and day of week)
                  time←⌊0 60 60 1000⊤86400000×1|y2 ⍝ calculate time of day from fractional part
                  r←date,time
-                 :If type≡'Excel'
+                 :If (⊂type)∊'Excel' '123'
                      :Select ⌊y
                      :Case 0
                          r←1900 1 0,time
