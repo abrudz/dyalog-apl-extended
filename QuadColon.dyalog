@@ -24,6 +24,11 @@
              'VariantOptions'⎕SE.⎕NS prev
          :EndIf
      :Else
-RESIGNAL:⎕SIGNAL⊂⎕DMX.(('EN'EN)('Message'Message))
+RESIGNAL:
+         ⎕SE.⎕EX'VariantOptions'
+         :If ≢prev
+             'VariantOptions'⎕SE.⎕NS prev
+         :EndIf
+         ⎕SIGNAL⊂⎕DMX.(('EN'EN)('Message'Message))
      :EndIf
  :EndTrap

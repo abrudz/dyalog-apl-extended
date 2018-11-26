@@ -20,6 +20,14 @@
              ⎕SIGNAL⊂('EN' 16)('Message' 'Conversion from text requires format pattern as left argument')
          :Else ⍝ normal vector: ⎕TS → IDN
              y7←All7 y
+             :If type≡'Excel'
+                 :If 1900>⊃y7
+                     ⎕SIGNAL⊂('EN' 11)('Message' 'Excel dates must be in the year 1900 or later')
+                 :EndIf
+                 :If 1900 2 29≡3↑y7
+                     y7←1900 2 28,3↓y7
+                 :EndIf
+             :EndIf
              date←2 ⎕NQ #'DateToIDN'y7 ⍝ ⎕TS → integer IDN
              time←86400000÷⍨0 60 60 1000⊥¯4↑y7 ⍝ hr:min:sec.ms → ms
              r←date+time
@@ -28,6 +36,8 @@
                  r←5184000×25568+r
              :Case 'NET'
                  r←(⌊+1||)r+1-(¯2<r)∧(r<¯1)
+             :Case 'Excel'
+                 r←r+(r≥59)-1900 2 28≡3↑All7 y
              :Else ⍝ "IDN"
              :EndSelect
          :EndIf
