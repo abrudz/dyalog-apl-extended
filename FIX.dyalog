@@ -2,10 +2,20 @@
     ⎕IO←1 ⋄ ⎕ML←1
     Err←{⍞←⍵,⎕UCS 13}
 
-    ∇ {ns}←Repl;input
+    ∇ {ns}←Repl;input;n;v
       2022⌶⍣('W'=⊃⊃# ⎕WG'APLVersion')⊤⍨⍬
       ⎕EX'⎕SE.VariantOptions'
       ns←##.(⎕NS ⎕NL-3 4)
+     
+      ⍞←'Dyalog APL/',⊃⊃v←# ⎕WG'APLVersion'
+      ⍞←(⊃v)∩'-',⎕D
+      ⍞←' Version ',¯2↓2⊃v
+      ⍞←n←⎕UCS 13
+     
+      ⍞←'Serial No : 123456',n
+      ⍞←'Extended Edition',n
+      ⍞←n,⍨'Ddd Mmm _D hh:mm:ss YYYY'##.∆XTS ⎕TS
+     
       :While '→'≢⊃⌽' '~⍨input←⍞⊣⍞←6⍴''
           :Trap 0
               :Select ⊃input~' '
@@ -51,7 +61,11 @@
           mask←×⊃∘⍴¨⍺⍺
           from←'''[^'']*''' '⍝.*' '`(.)' '⊂\[([^[]]+)\]' '⊇\[([^[]]+)\]','⍣' '\W' '\w\b'⎕R' *⍣ *' '\\&' '&\\b'⊢mask/⍺⍺
           to←'&' '&' '\1' '((\1)LeftShoeWithAxis)' '((\1)RightShoeUnderbarWithAxis)','^|$'⎕R' '⊢mask/⍵⍵
-          from ⎕R to⊢⍵
+          code←'(''[^'']+'' *|"[^"]*" *)+'⎕R{
+              ~'"'∊'''[^'']'''⎕R''⊢⍵.Match:⍵.Match
+              1⌽')(⊆','''\)⌋⌉\(,''' '⌉|⌋'⎕R'"' ''⊢'''' '"([^"]+)"'⎕R('''' '⌉(,''\1'')⌋')⊢⍵.Match
+          }⍵
+          from ⎕R to⊢code
       }
 
       Execute←{
