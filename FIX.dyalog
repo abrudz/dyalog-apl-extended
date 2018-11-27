@@ -25,7 +25,7 @@
       ns.⎕EX ##.⎕NL-3 4
     ∇
 
-    ∇ {ref}←FIX srcFile;files;file;src;code;glyph;glyphs;names;from;to;loaded;pattern
+    ∇ {ref}←{mode}FIX srcFile;files;file;src;code;glyph;glyphs;names;from;to;loaded;pattern
       src←,⊂':namespace'
       loaded←5177⌶⍬
       pattern←'*.dyalog',⍨⊃⎕NPARTS loaded⊃⍨4,⍨⎕THIS⍳⍨⊃¨loaded
@@ -41,7 +41,10 @@
           :EndIf
       :EndFor
       code←1↓⊃⎕NGET(srcFile↓⍨7×'file://'≡7↑srcFile)1
-      ref←⎕FIX glyphs To names⊢src,code
+      :If 900⌶⍬
+          mode←⊢
+      :EndIf
+      ref←mode ⎕FIX glyphs To names⊢src,code
     ∇
 
       To←{

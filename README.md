@@ -4,8 +4,12 @@ Extended domains of existing primitives/quad-names, and a few new ones. Requires
 
 ### How to use
 
+#### Initialisation
+
+Replacing `ns` with your target namespace (e.g. `#`), do
+
 ```
-]Load path/dyalog-apl-extended/*
+]Load path/dyalog-apl-extended/* ns
 ```
 
 or¹⁷
@@ -13,6 +17,14 @@ or¹⁷
 ```
 ]Link ns path/dyalog-apl-extended
 ```
+
+#### Running code
+
+Now you have three options:
+
+1. Use the extensions directly with the glyph names.
+1. Use `ns.Extended.FIX` as a drop in for `⎕FIX`.
+1. Use `ns.Extended.Repl` to start a (limited) session where the glyphs work. Enter `→` to exit.
 
 ### Content
 
