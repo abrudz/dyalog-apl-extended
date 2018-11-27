@@ -2,7 +2,7 @@
     ⎕IO←1 ⋄ ⎕ML←1
     Err←{⍞←⍵,⎕UCS 13}
 
-    ∇ Repl;input;ns;win
+    ∇ {ns}←Repl;input
       2022⌶⍣('W'=⊃⊃# ⎕WG'APLVersion')⊤⍨⍬
       ⎕EX'⎕SE.VariantOptions'
       ns←##.(⎕NS ⎕NL-3 4)
@@ -17,11 +17,12 @@
                   ⎕←ns Execute input
               :EndSelect
           :Else
-              ⍞←(1↓(⊃⎕DM),(×≢⎕DMX.Message)/': ',⎕DMX.Message),⎕UCS 13
+              ⍞←((⊢↓⍨'⍎'=⊃)(⊃⎕DM),(×≢⎕DMX.Message)/': ',⎕DMX.Message),⎕UCS 13
               ⍞←('     ',10↓⊃1↓⎕DM),⎕UCS 13
               ⍞←('     ',10↓⊃2↓⎕DM),⎕UCS 13
           :EndTrap
       :EndWhile
+      ns.⎕EX ##.⎕NL-3 4
     ∇
 
     ∇ {ref}←FIX srcFile;files;file;src;code;glyph;glyphs;names;from;to;loaded;pattern
