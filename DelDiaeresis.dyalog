@@ -3,9 +3,9 @@
      2 2≡⎕NC↑'⍺' '⍺⍺':⎕SIGNAL⊂('EN' 2)('Message' 'Array left argument conflicts with array left operand')
      ⍺←{⍵ ⋄ ⍺⍺}      ⍝ no ⍺: pass through
      ⍵⍵{
-         midTine←⍺⍺
+         aa←⍺⍺
          3::0
-         (⎕CR'DelTilde')≡2⊃⎕CR'midTine'
+         (⎕CR'DelTilde')≡2⊃⎕CR'aa'
      }⍬:ww.InvFn(ww.NrmFn ⍺)⍺⍺(ww←⍵⍵ ⍬).NrmFn ⍵
      ⍵ ⍵⍵{           ⍝ pass in original ⍵
          A←⍺             ⍝ modifiable array
