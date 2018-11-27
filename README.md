@@ -23,6 +23,7 @@ or¹⁷
 | [BackSlashBar](BackSlashBar.dyalog)               |  `⍀`   |  🔶   | `∘.f` when dyadic, allows short and/or multiple left args    |
 | [CircleDiaeresis](CircleDiaeresis.dyalog)         |  `⍥`   |  🔺   | Over and Depth                                               |
 | [DelDiaeresis](DelDiaeresis.dyalog)               |  `⍢`   |  🔺   | Under (a.k.a. Dual)                                          |
+| [DelTilde](DelTilde.dyalog)                       |  `⍫`   |  🔺   | Obverse; `⍺⍺` but with inverse `⍵⍵`                          |
 | [Diaeresis](Diaeresis.dyalog)                     |  `¨`   |  🔵   | allows constant operand                                      |
 | [DownShoe](DownShoe.dyalog)                       |  `∪`   |  🔵   | allows rank>1                                                |
 | [Downstile](Downstile.dyalog)                     |  `⌊`   |  🔵   | monadic lowercases letters                                   |
