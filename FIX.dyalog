@@ -1,5 +1,10 @@
 :Namespace Extended
-    ∇ Repl;input;ns
+    ⎕IO←1 ⋄ ⎕ML←1
+    Err←{⍞←⍵,⎕UCS 13}
+
+    ∇ Repl;input;ns;win
+      2022⌶⍣('W'=⊃⊃# ⎕WG'APLVersion')⊤⍨⍬
+      ⎕EX'⎕SE.VariantOptions'
       ns←##.(⎕NS ⎕NL-3 4)
       :While '→'≢⊃⌽' '~⍨input←⍞⊣⍞←6⍴''
           :Trap 0
@@ -12,7 +17,9 @@
                   ⎕←ns Execute input
               :EndSelect
           :Else
-              ⎕←↑ns.⎕DMX.((⊂1↓(⊃DM),(Message≢'')/': ',Message),1↓DM)
+              ⍞←(1↓(⊃⎕DM),(×≢⎕DMX.Message)/': ',⎕DMX.Message),⎕UCS 13
+              ⍞←('     ',10↓⊃1↓⎕DM),⎕UCS 13
+              ⍞←('     ',10↓⊃2↓⎕DM),⎕UCS 13
           :EndTrap
       :EndWhile
     ∇

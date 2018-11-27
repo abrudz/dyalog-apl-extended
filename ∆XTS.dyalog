@@ -3,8 +3,17 @@
 
  All7←{ ⍝ Expand date to ⎕TS's 7 elements
      ×⊃⍵:⍵,0 1 1 0 0 0 0↓⍨≢⍵ ⍝ extend to Year Jan 1st, 00:00:00.000
-     IDN←QuadColon'NumberType' 'IDN'
-     ∆XTN IDN(∆XTS IDN 123⌶0)+1440÷⍨60⊥3↓5↑⍵ ⍝ null is UTC+hh:mm
+     utc←{
+         opts←'NumberType' 'IDN'
+         ×⎕NC'QuadColon':∆XTS QuadColon opts⊢⍵
+         ##.∆XTS ##.QuadColon opts⊢⍵
+     }123⌶0
+     unc←utc+1440÷⍨60⊥3↓5↑⍵ ⍝ null is UTC+hh:mm
+     {
+         opts←'NumberType' 'IDN'
+         ×⎕NC'QuadColon':∆XTN QuadColon opts⊢⍵
+         ##.∆XTN ##.QuadColon opts⊢⍵
+     }unc
  }
  :Trap 0
      :If 2<(≢⍴×|∘≡)y

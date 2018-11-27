@@ -18,9 +18,6 @@
                  r←123⌶0 ⍝ null: UTC already in ⎕TS form
              :Else
                  :Select type
-                 :Case 'DCF'
-                     y2←¯25568+y÷5184000
-                     y2←y2-(y2<0)∧(0≠1|y2)
                  :Case 'NET' '.NET'
                      y2←¯1+(⌊y)+(1||y)-(×y)×0=⌊y
                  :CaseList 'Excel' '123'
@@ -28,8 +25,12 @@
                          ⎕SIGNAL⊂('EN' 11)('Message' 'Excel dates must be in the year 1900 or later')
                      :EndIf
                      y2←y-59<⌊y
+                 :Case 'DCF'
+                     y2←25568+y÷5184000
+                     y2←y2-(y2<0)∧(0≠1|y2)
                  :Case 'UNIX'
                      y2←25568+y÷86400
+                     y2←y2-(y2<0)∧(0≠1|y2)
                  :Else ⍝ "IDN"
                      y2←y-(y<0)∧(0≠1|y)
                  :EndSelect

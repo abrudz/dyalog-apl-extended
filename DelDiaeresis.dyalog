@@ -2,6 +2,11 @@
      0::⎕SIGNAL ⎕EN
      2 2≡⎕NC↑'⍺' '⍺⍺':⎕SIGNAL⊂('EN' 2)('Message' 'Array left argument conflicts with array left operand')
      ⍺←{⍵ ⋄ ⍺⍺}      ⍝ no ⍺: pass through
+     ⍵⍵{
+         midTine←⍺⍺
+         3::0
+         (⎕CR'DelTilde')≡2⊃⎕CR'midTine'
+     }⍬:ww.InvFn(ww.NrmFn ⍺)⍺⍺(ww←⍵⍵ ⍬).NrmFn ⍵
      ⍵ ⍵⍵{           ⍝ pass in original ⍵
          A←⍺             ⍝ modifiable array
          11::A⊣((⍺⍺)A)←⍵ ⍝ structural inversion on error...
