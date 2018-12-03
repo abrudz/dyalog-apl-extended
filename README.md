@@ -24,7 +24,7 @@ Now you have three options:
 
 1. Use the extensions directly with the glyph names.
 1. Use `ns.Extended.FIX` as a drop in for `⎕FIX`.
-1. Use `ns.Extended.Repl` to start a (limited) session where the glyphs work. Enter `→` to exit.
+1. Use `ns.Extended.Repl ''` to start a (limited) session where the glyphs work. Enter `→` to exit.
 
 ### Content
 
