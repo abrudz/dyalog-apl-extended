@@ -53,7 +53,11 @@
           :If ≢glyph
               glyphs,←glyph
               names,←2⌷⎕NPARTS file
-              src,←code
+              :If '}'=⊃⌽' '~⍨∊code
+                  src,←code
+              :Else
+                  src,←'∇'∘,¨@1⊢code,⊂,'∇'
+              :EndIf
           :EndIf
       :EndFor
       code←1↓⊃⎕NGET(srcFile↓⍨7×'file://'≡7↑srcFile)1
