@@ -34,6 +34,7 @@ Now you have three options:
 | [BackSlash](BackSlash.dyalog)                     |  `\`   |  🔶   | `∘.f⍨∘⍉⍨` when dyadic, allows short and/or multiple left args |
 | [BackSlashBar](BackSlashBar.dyalog)               |  `⍀`   |  🔶   | `∘.f` when dyadic, allows short and/or multiple left args    |
 | [CircleDiaeresis](CircleDiaeresis.dyalog)         |  `⍥`   |  🔺   | Over and Depth                                               |
+| [CircleJot](CircleJot.dyalog)                     |  `⌾`   |  🔺   | Complex/Imaginary                                            |
 | [DelDiaeresis](DelDiaeresis.dyalog)               |  `⍢`   |  🔺   | Under (a.k.a. Dual)                                          |
 | [DelTilde](DelTilde.dyalog)                       |  `⍫`   |  🔺   | Obverse; `⍺⍺` but with inverse `⍵⍵`                          |
 | [Diaeresis](Diaeresis.dyalog)                     |  `¨`   |  🔵   | allows constant operand                                      |
@@ -67,6 +68,7 @@ Now you have three options:
 | [SlashBar](SlashBar.dyalog)                       |  `⌿`   |  🔵   | allows short and/or multiple left args                       |
 | [StarDiaeresis](StarDiaeresis.dyalog)             |  `⍣`   |  🔵   | allows non-scalar right operand incl. `∞` and `¯∞` and array left operand |
 | [Stile](Stile.dyalog)                             |  `\|`  |  🔵   | monadic normalises letters to lowercase (upper then lower)   |
+| [StileTilde](StileTilde.dyalog)                   |  `⍭`   |  🔺   | monadic is factors; dyadic depends on `⍺`=0:non-prime, 1=prime, ¯1=less, ¯2=`⍵`th, 4=next, ¯4=prev |
 | [Tilde](Tilde.dyalog)                             |  `~`   |  🔵   | monadic allows probabilities, dyadic allows rank>1           |
 | [TildeDiaeresis](TildeDiaeresis.dyalog)           |  `⍨`   |  🔵   | allows constant operand                                      |
 | [Times](Times.dyalog)                             |  `×`   |  🔵   | set/query letter case (lower: `¯1`, title: `0`, upper: `1`)  |
