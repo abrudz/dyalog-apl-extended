@@ -43,6 +43,7 @@ Now you have three options:
 | [DownTack](DownTack.dyalog)                       |  `⊤`   |  🔶   | 2s as default left argument                                  |
 | [Ellipsis](Ellipsis.dyalog)                       |  `…`   |  🔺   | fill sequence gaps ([dfns's `to⍤1`](http://dfns.dyalog.com/n_to.htm)) |
 | [EpsilonUnderbar](EpsilonUnderbar.dyalog)         |  `⍷`   |  🔶   | monadic is Type `∊` with `⎕ML←0`                             |
+| [Equals](Equals.dyalog)                           |  `=`   |  🔶   | with TAO; monad: is-zero                                     |
 | [GreaterThan](GreaterThan.dyalog)                 |  `>`   |  🔶   | with TAO; monad: is-strictly-negative                        |
 | [GreaterThanOrEqualTo](GreaterThanOrEqualTo.dyalog) |  `≥` |  🔶   | with TAO; monad: is non-positive                             |
 | [infinity](infinity.dyalog)                       |  `∞`   |  🔺   | largest integer (for use with `⍤` and `⍣`)                   |
@@ -56,6 +57,7 @@ Now you have three options:
 | [LessThanOrEqualTo](LessThanOrEqualTo.dyalog)     |  `≤`   |  🔶   | with TAO ; monad: is-non-negative                            |
 | [Minus](Minus.dyalog)                             |  `-`   |  🔵   | monadic flips letter case                                    |
 | [negativeInfinity](negativeInfinity.dyalog)       |  `¯∞`  |  🔺   | smallest integer (for use with `⍣`)                          |
+| [NotEqualTo](NotEqualTo.dyalog)                   |  `≠`   |  🔶   | with TAO; monad: is-non-zero                                 |
 | [Plus](Plus.dyalog)                               |  `+`   |  🔵   | monadic converts letters to title case when possible         |
 | [QuadDiamond](QuadDiamond.dyalog)                 |  `⌺`   |  🔶   | auto-extended `⍵⍵`, allows small `⍵`, optional edge spec(s) ([0:Zero; 1:Repl; 2:Rev; 3:Mirror; 4:Wrap](http://web.science.mq.edu.au/~len/preprint/hamey-dicta2015-functional-border.pdf#page=3); -:Twist) with masks as operand's `⍺` |
 | [QuadColon](QuadColon.dyalog) | `⍠` | 🔵 | also applies to `∆XDN` and `∆XTN` |
