@@ -2,10 +2,14 @@
     ⎕IO←1 ⋄ ⎕ML←1
     Err←{⍞←⍵,⎕UCS 13}
 
-    ∇ {ns}←Repl;input;n;v
+    ∇ {ns}←Repl target;input;n;v
       2022⌶⍣('W'=⊃⊃# ⎕WG'APLVersion')⊤⍨⍬
       ⎕EX'⎕SE.VariantOptions'
-      ns←##.(⎕NS ⎕NL-3 4)
+      :If ×≢target
+          ns←⍎(⍕target)##.⎕NS ##.⎕NL-3 4
+      :Else
+          ns←##.(⎕NS ⎕NL-3 4)
+      :EndIf
      
       ⍞←'Dyalog APL/',⊃⊃v←# ⎕WG'APLVersion'
       ⍞←(⊃v)∩'-',⎕D
@@ -14,7 +18,9 @@
      
       ⍞←'Serial No : 123456',n
       ⍞←'Extended Edition',n
-      ⍞←n,⍨'Ddd Mmm _D hh:mm:ss YYYY'##.∆XTS ⎕TS
+      ⍞←'Sun' 'Mon' 'Tue' 'Wed' 'Thu' 'Fri' 'Sat'⊃⍨7|2 ⎕NQ #'DateToIDN'⎕TS
+      ⍞←' ','-- ::.'@5 8 11 14 17 20∊⍕¨0 100 100 100 100 100 1000+⎕TS
+      ⍞←n
      
       :While '→'≢⊃⌽' '~⍨input←⍞⊣⍞←6⍴''
           :Trap 0
