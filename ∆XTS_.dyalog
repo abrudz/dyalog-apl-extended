@@ -5,14 +5,14 @@
      ×⊃⍵:⍵,0 1 1 0 0 0 0↓⍨≢⍵ ⍝ extend to Year Jan 1st, 00:00:00.000
      utc←{
          opts←'NumberType' 'IDN'
-         ×⎕NC'QuadColon':∆XTS QuadColon opts⊢⍵
-         ##.∆XTS ##.QuadColon opts⊢⍵
+         ×⎕NC'QuadColon':∆XTS_ QuadColon opts⊢⍵
+         ##.∆XTS_ ##.QuadColon opts⊢⍵
      }123⌶0
      unc←utc+1440÷⍨60⊥3↓5↑⍵ ⍝ null is UTC+hh:mm
      {
          opts←'NumberType' 'IDN'
-         ×⎕NC'QuadColon':∆XTN QuadColon opts⊢⍵
-         ##.∆XTN ##.QuadColon opts⊢⍵
+         ×⎕NC'QuadColon':∆XTN_ QuadColon opts⊢⍵
+         ##.∆XTN_ ##.QuadColon opts⊢⍵
      }unc
  }
  :Trap 0
@@ -24,7 +24,11 @@
      mat←2=≢⍴y
      :If 900⌶⍬ ⍝ MONADIC: ⎕TS → IDN
          :If 2=(≢∘⍴×|∘≡)y ⍝ multi
-             r←⍪⍣mat ∆XTS¨↓⍣mat⊢y
+             :If ×⎕NC'∆XTS_'
+                 r←⍪⍣mat ∆XTS_¨↓⍣mat⊢y
+             :Else
+                 r←⍪⍣mat ##.∆XTS_¨↓⍣mat⊢y
+             :EndIf
          :ElseIf ''≡0⍴y ⍝ text → ⎕TS
              ⎕SIGNAL⊂('EN' 16)('Message' 'Conversion from text requires format pattern as left argument')
          :Else ⍝ normal vector: ⎕TS → IDN
@@ -58,7 +62,11 @@
          :EndIf
          y2←↓⍣mat⊢1/y
          :If ∨/1<|≡¨fmt y2 ⍝ multi
-             r←(⊆fmt)∆XTS¨(⊆y2)
+             :If ×⎕NC'∆XTS_'
+                 r←(⊆fmt)∆XTS_¨(⊆y2)
+             :Else
+                 r←(⊆fmt)##.∆XTS_¨(⊆y2)
+             :EndIf
          :ElseIf ''≡0⍴y2 ⍝ fmt,text → ⎕TS
              ⎕SIGNAL⊂('EN' 16)('Message' 'Conversion from text is not implemented yet')
          :Else ⍝ fmt,⎕TS → text

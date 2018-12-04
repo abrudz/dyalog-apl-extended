@@ -10,7 +10,11 @@
      type←'IDN'{×⎕NC ⍵:⍎⍵ ⋄ ⍺}'⎕SE.VariantOptions.NumberType'
      :If 900⌶⍬ ⍝ MONADIC: IDN → ⎕TS
          :If 0<≢⍴y ⍝ vector
-             r←↑⍣(2=≢⍴y)∆XTN¨,y
+             :If ×⎕NC'∆XTN_'
+                 r←↑⍣(2=≢⍴y)∆XTN_¨,y
+             :Else
+                 r←↑⍣(2=≢⍴y)##.∆XTN_¨,y
+             :EndIf
          :ElseIf ''≡0⍴y ⍝ text → IDN
              ⎕SIGNAL⊂('EN' 11)('Message' 'Conversion from text requires a left argument')
          :Else ⍝ scalar: IDN → ⎕TS
@@ -50,7 +54,11 @@
              :EndIf
          :EndIf
      :Else ⍝ DYADIC: fmt,IDN → text
-         r←fmt ∆XTS ∆XTN y
+         :If ×⎕NC'∆XTN_'
+             r←fmt ∆XTS_ ∆XTN_ y
+         :Else
+             r←fmt ##.∆XTS_ ##.∆XTN_ y
+         :EndIf
      :EndIf
  :Else
      ⎕SIGNAL⊂⎕DMX.(('EN'EN)('Message'Message))
