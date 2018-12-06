@@ -26,7 +26,7 @@
                      y2←¯1+(⌊y)+(1||y)-(×y)×0=⌊y
                  :CaseList 'Excel' '123'
                      :If y<0
-                         ⎕SIGNAL⊂('EN' 11)('Message' 'Excel dates must be in the year 1900 or later')
+                         ⎕SIGNAL⊂('EN' 11)('Message'(type,' dates must be in the year 1900 or later'))
                      :EndIf
                      y2←y-59<⌊y
                  :Case 'DCF'

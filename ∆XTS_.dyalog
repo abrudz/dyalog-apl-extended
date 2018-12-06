@@ -37,6 +37,9 @@
                  :If 1900>⊃y7
                      ⎕SIGNAL⊂('EN' 11)('Message' 'Excel dates must be in the year 1900 or later')
                  :EndIf
+                 :If 1900 1 0≡3↑y7
+                     y7←1899 12 31,3↓y7
+                 :EndIf
                  :If 1900 2 29≡3↑y7
                      y7←1900 2 28,3↓y7
                  :EndIf
