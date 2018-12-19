@@ -42,7 +42,7 @@
     ∇
 
     ∇ {ref}←{mode}FIX srcFile;files;file;src;code;glyph;glyphs;names;from;to;loaded;pattern
-      src←,⊂':namespace'
+      src←⍬
       loaded←5177⌶⍬
       pattern←'*.dyalog',⍨⊃⎕NPARTS loaded⊃⍨4,⍨⎕THIS⍳⍨⊃¨loaded
       files←(⍒⊃¨⊂)⊃⎕NINFO⍠1⊢pattern
