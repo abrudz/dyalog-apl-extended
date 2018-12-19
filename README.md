@@ -56,7 +56,10 @@ Now you have three options:
 | [LessThan](LessThan.dyalog)                       |  `<`   |  🔶   | with TAO; monad: is-strictly-positive                        |
 | [LessThanOrEqualTo](LessThanOrEqualTo.dyalog)     |  `≤`   |  🔶   | with TAO ; monad: is-non-negative                            |
 | [Minus](Minus.dyalog)                             |  `-`   |  🔵   | monadic flips letter case                                    |
+| macron                                            |  `¯`   |  🔵   | as prefix to name or primitive means its inverse             |
 | [negativeInfinity](negativeInfinity.dyalog)       |  `¯∞`  |  🔺   | smallest integer (for use with `⍣`)                          |
+| [Nand](Nand.dyalog)                               |  `⍲`   |  🔶   | monad: not all                                               |
+| [Nor](Nor.dyalog)                                 |  `⍱`   |  🔶   | monad: not any                                               |
 | [NotEqualTo](NotEqualTo.dyalog)                   |  `≠`   |  🔶   | with TAO; monad: is-non-zero                                 |
 | [Plus](Plus.dyalog)                               |  `+`   |  🔵   | monadic converts letters to title case when possible         |
 | [QuadDiamond](QuadDiamond.dyalog)                 |  `⌺`   |  🔶   | auto-extended `⍵⍵`, allows small `⍵`, optional edge spec(s) ([0:Zero; 1:Repl; 2:Rev; 3:Mirror; 4:Wrap](http://web.science.mq.edu.au/~len/preprint/hamey-dicta2015-functional-border.pdf#page=3); -:Twist) with masks as operand's `⍺` |
@@ -83,11 +86,7 @@ Now you have three options:
 | [∆NS](∆NS.dyalog)                                 |  `⎕NS` |  🔵   | allows `⎕NS names values` (tries to resolve `⎕OR`s)          |
 | [∆NSinverse](∆NSinverse.dyalog)                   |`⎕NS⍣¯1`|  🔺   | allows `(names values)←⎕NS⍣¯1⊢ns` (returns `⎕OR`s for ns/fns) |
 | [∆UCS](∆UCS.dyalog)                               | `⎕UCS` |  🔵   | scalar when monadic                                          |
-| [∆XTN](∆XTN.dyalog) | `⎕XTN` | 🔺 | convert time numbers (`⎕NULL` for UTC¹⁸) to text¹⁸ (dyadic) or time stamps (monadic) |
-| [∆XTS](∆XTS.dyalog) | `⎕XTS` | 🔺 | convert time stamps (`0` for UTC¹⁸) to text¹⁸ (dyadic) or time numbers (monadic) |
 
 \* 🔺 means new feature 🔶 means added valence 🔵 means expanded domain
 
 ¹⁷ Requires Dyalog APL version 17.0
-
-¹⁸ Requires Dyalog APL version 18.0
