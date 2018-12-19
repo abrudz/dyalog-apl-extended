@@ -60,11 +60,11 @@
               :EndIf
           :EndIf
       :EndFor
-      code←1↓⊃⎕NGET(srcFile↓⍨7×'file://'≡7↑srcFile)1
+      code←⊃⎕NGET(srcFile↓⍨7×'file://'≡7↑srcFile)1
       :If 900⌶⍬
           mode←⊢
       :EndIf
-      ref←mode ⎕FIX glyphs To names⊢src,code
+      ref←mode ⎕FIX (1↑code),src,glyphs To names⊢1↓code
     ∇
 
       To←{
@@ -76,6 +76,7 @@
           ⍝    ~'"'∊'''[^'']'''⎕R''⊢⍵.Match:⍵.Match
           ⍝    1⌽')(⊆','''\)⌋⌉\(,''' '⌉|⌋'⎕R'"' ''⊢'''' '"([^"]+)"'⎕R('''' '⌉(,''\1'')⌋')⊢⍵.Match
           ⍝}code
+          code←'¯(?=[^0-9])(\w+|.)'⎕R'(\1⍣¯1)'⊢code ⍝ support ¯f as f⍣¯1
           from ⎕R to⊢code
       }
 
