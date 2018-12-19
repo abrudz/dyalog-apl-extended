@@ -56,7 +56,7 @@ Now you have three options:
 | [LessThan](LessThan.dyalog)                       |  `<`   |  🔶   | with TAO; monad: is-strictly-positive                        |
 | [LessThanOrEqualTo](LessThanOrEqualTo.dyalog)     |  `≤`   |  🔶   | with TAO ; monad: is-non-negative                            |
 | [Minus](Minus.dyalog)                             |  `-`   |  🔵   | monadic flips letter case                                    |
-| macron                                            |  `¯`   |  🔵   | as prefix to name or primitive means its inverse             |
+| [macron](FIX.dyalog#L79)                          |  `¯`   |  🔵   | as prefix to name or primitive means its inverse             |
 | [negativeInfinity](negativeInfinity.dyalog)       |  `¯∞`  |  🔺   | smallest integer (for use with `⍣`)                          |
 | [Nand](Nand.dyalog)                               |  `⍲`   |  🔶   | monad: not all                                               |
 | [Nor](Nor.dyalog)                                 |  `⍱`   |  🔶   | monad: not any                                               |
