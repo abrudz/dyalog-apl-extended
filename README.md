@@ -77,7 +77,7 @@ Now you have three options:
 | [Tilde](Tilde.dyalog)                             |  `~`   |  🔵   | monadic allows probabilities, dyadic allows rank>1           |
 | [TildeDiaeresis](TildeDiaeresis.dyalog)           |  `⍨`   |  🔵   | allows constant operand                                      |
 | [Times](Times.dyalog)                             |  `×`   |  🔵   | set/query letter case (lower: `¯1`, title: `0`, upper: `1`)  |
-| [UpShoe](UpShoe.dyalog)                           |  `∩`   |  🔵   | allows rank>1                                                |
+| [UpShoe](UpShoe.dyalog)                           |  `∩`   |  🔶   | monadic is self-classify; dyadic allows rank>1               |
 | [Upstile](Upstile.dyalog)                         |  `⌈`   |  🔵   | monadic uppercases letters                                   |
 | [UpTack](UpTack.dyalog)                           |  `⊥`   |  🔶   | 2 as default left argument                                   |
 | [Vel](Vel.dyalog)                                 |  `∨`   |  🔶   | monadic is Descending Sort                                   |
