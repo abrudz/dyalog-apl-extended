@@ -43,9 +43,9 @@ Now you have three options:
 | [DownTack](DownTack.dyalog)                       |  `⊤`   |  🔶   | 2s as default left argument                                  |
 | [Ellipsis](Ellipsis.dyalog)                       |  `…`   |  🔺   | fill sequence gaps ([dfns's `to⍤1`](http://dfns.dyalog.com/n_to.htm)) |
 | [EpsilonUnderbar](EpsilonUnderbar.dyalog)         |  `⍷`   |  🔶   | monadic is Type `∊` with `⎕ML←0`                             |
-| [Equals](Equals.dyalog)                           |  `=`   |  🔶   | with TAO; monad: is-zero                                     |
-| [GreaterThan](GreaterThan.dyalog)                 |  `>`   |  🔶   | with TAO; monad: is-strictly-negative                        |
-| [GreaterThanOrEqualTo](GreaterThanOrEqualTo.dyalog) |  `≥` |  🔶   | with TAO; monad: is non-positive                             |
+| [Equals](Equals.dyalog)                           |  `=`   |  🔶   | with TAO; monad: is-type                                     |
+| [GreaterThan](GreaterThan.dyalog)                 |  `>`   |  🔶   | with TAO; monad: is-strictly-negative/is-visible             |
+| [GreaterThanOrEqualTo](GreaterThanOrEqualTo.dyalog) |  `≥` |  🔶   | with TAO; monad: is non-positive/is-not-control-character    |
 | [infinity](infinity.dyalog)                       |  `∞`   |  🔺   | largest integer (for use with `⍤` and `⍣`)                   |
 | [Iota](Iota.dyalog)                               |  `⍳`   |  🔵   | Unicode version of [dfns's `iotag`](http://dfns.dyalog.com/n_iotag.htm) |
 | [IotaUnderbar](IotaUnderbar.dyalog)               |  `⍸`   |  🔵   | allows duplicates/non-Booleans                               |
@@ -53,14 +53,14 @@ Now you have three options:
 | [JotDiaeresis](JotDiaeresis.dyalog)               |  `⍤`   |  🔵   | allows constant left operand, Atop with function right operand |
 | [LeftShoe](LeftShoe.dyalog)                       |  `⊂`   |  🔵   | allows partitioning along multiple trailing axes, with short ⍺s, and inserting/appending empty partitions |
 | [LeftShoeWithAxis](LeftShoeWithAxis.dyalog)       | `⊂[k]` |  🔵   | as above, but called with left operand                       |
-| [LessThan](LessThan.dyalog)                       |  `<`   |  🔶   | with TAO; monad: is-strictly-positive                        |
-| [LessThanOrEqualTo](LessThanOrEqualTo.dyalog)     |  `≤`   |  🔶   | with TAO ; monad: is-non-negative                            |
+| [LessThan](LessThan.dyalog)                       |  `<`   |  🔶   | with TAO; monad: is-strictly-positive/is-control-character   |
+| [LessThanOrEqualTo](LessThanOrEqualTo.dyalog)     |  `≤`   |  🔶   | with TAO ; monad: is-non-negative/is-invisible               |
 | [Minus](Minus.dyalog)                             |  `-`   |  🔵   | monadic flips letter case                                    |
 | [macron](FIX.dyalog#L79)                          |  `¯`   |  🔵   | as prefix to name or primitive means its inverse             |
 | [negativeInfinity](negativeInfinity.dyalog)       |  `¯∞`  |  🔺   | smallest integer (for use with `⍣`)                          |
 | [Nand](Nand.dyalog)                               |  `⍲`   |  🔶   | monad: not all                                               |
 | [Nor](Nor.dyalog)                                 |  `⍱`   |  🔶   | monad: not any                                               |
-| [NotEqualTo](NotEqualTo.dyalog)                   |  `≠`   |  🔶   | with TAO; monad: is-non-zero                                 |
+| [NotEqualTo](NotEqualTo.dyalog)                   |  `≠`   |  🔶   | with TAO; monad: is-non-type                                 |
 | [Plus](Plus.dyalog)                               |  `+`   |  🔵   | monadic converts letters to title case when possible         |
 | [QuadDiamond](QuadDiamond.dyalog)                 |  `⌺`   |  🔶   | auto-extended `⍵⍵`, allows small `⍵`, optional edge spec(s) ([0:Zero; 1:Repl; 2:Rev; 3:Mirror; 4:Wrap](http://web.science.mq.edu.au/~len/preprint/hamey-dicta2015-functional-border.pdf#page=3); -:Twist) with masks as operand's `⍺` |
 | [QuadColon](QuadColon.dyalog) | `⍠` | 🔵 | also applies to `∆XDN` and `∆XTN` |
