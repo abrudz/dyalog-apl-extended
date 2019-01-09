@@ -1,7 +1,8 @@
  StarDiaeresis←{ ⍝ ⍣ which allows non-scalar right operand and infinities
      ns←⎕NULL⍴⍨15⍴0
      ⍺←⊢
-     (2=⎕NC'⍺⍺')∧(0≠≡⍵⍵):⍺⍺(⍺{⍺⍺(⍺ StarDiaeresis ⍵)⍵⍵}⍵)¨⍵⍵
+     val←{2=⎕NC'⍺⍺':⍺⍺ ⋄ 0}
+     (2=⎕NC'⍺⍺')∧(0≠≡⍵⍵ val ⍬):⍺⍺(⍺{⍺⍺(⍺ StarDiaeresis ⍵)⍵⍵}⍵)¨⍵⍵
      2=⎕NC'⍺⍺':⍺(⍺⍺⊣⊢)∇∇ ⍵⍵⊢⍵
      obv←⍺⍺{
          aa←⍺⍺
