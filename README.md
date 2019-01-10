@@ -58,8 +58,8 @@ Now you have three options:
 | [Minus](Minus.dyalog)                             |  `-`   |  🔵   | monadic flips letter case                                    |
 | [macron](FIX.dyalog#L79)                          |  `¯`   |  🔵   | as prefix to name or primitive means its inverse             |
 | [negativeInfinity](negativeInfinity.dyalog)       |  `¯∞`  |  🔺   | smallest integer (for use with `⍣`)                          |
-| [Nand](Nand.dyalog)                               |  `⍲`   |  🔶   | monad: not all                                               |
-| [Nor](Nor.dyalog)                                 |  `⍱`   |  🔶   | monad: not any                                               |
+| [Nand](Nand.dyalog)                               |  `⍲`   |  🔶   | monad: not all equal to type                                 |
+| [Nor](Nor.dyalog)                                 |  `⍱`   |  🔶   | monad: not any equal to type                                 |
 | [NotEqualTo](NotEqualTo.dyalog)                   |  `≠`   |  🔶   | with TAO; monad: is-non-type                                 |
 | [Plus](Plus.dyalog)                               |  `+`   |  🔵   | monadic converts letters to title case when possible         |
 | [QuadDiamond](QuadDiamond.dyalog)                 |  `⌺`   |  🔶   | auto-extended `⍵⍵`, allows small `⍵`, optional edge spec(s) ([0:Zero; 1:Repl; 2:Rev; 3:Mirror; 4:Wrap](http://web.science.mq.edu.au/~len/preprint/hamey-dicta2015-functional-border.pdf#page=3); -:Twist) with masks as operand's `⍺` |
