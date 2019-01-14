@@ -10,7 +10,7 @@
      ⍬≡⍴⍺⍺:(rank⍴⍺⍺)∇∇ w      ⍝ (⊂A1)\B
      aaLen←≢⍺⍺
      aa←⍺⍺,¨1⍴¨⍨aaLen↑0.1,⍨⍴w ⍝ A1 A2 A3⍀B
-     aa↑¨⍨←(+\¨aa)⍳¨aaLen↑⍴w
+     aa↑¨⍨←(+\¨×aa)⍳¨aaLen↑⍴w
      pairs←aa{⍺ ⍵}¨aaLen↑⍳rank
      ⊃{⍵⍀[⊃⌽⍺]⍨⊃⍺}⌿pairs,⊂w
  }
