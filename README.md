@@ -33,6 +33,7 @@ Now you have three options:
 | [At](At.dyalog)                                   |  `@`   |  🔵   | prefix-friendly                                              |
 | [BackSlash](BackSlash.dyalog)                     |  `\`   |  🔶   | `∘.f⍨∘⍉⍨` when dyadic, allows short and/or multiple left args |
 | [BackSlashBar](BackSlashBar.dyalog)               |  `⍀`   |  🔶   | `∘.f` when dyadic, allows short and/or multiple left args    |
+| [Bullet](Bullet.dyalog)                           |  `∙`   |  🔺   | Inner product and Alternant                                  |
 | [CircleDiaeresis](CircleDiaeresis.dyalog)         |  `⍥`   |  🔺   | Over and Depth                                               |
 | [CircleJot](CircleJot.dyalog)                     |  `⌾`   |  🔺   | Complex/Imaginary                                            |
 | [DelDiaeresis](DelDiaeresis.dyalog)               |  `⍢`   |  🔺   | Under (a.k.a. Dual)                                          |
