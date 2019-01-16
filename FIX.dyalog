@@ -64,13 +64,24 @@
       :If 900⌶⍬
           mode←⊢
       :EndIf
-      ref←mode ⎕FIX (1↑code),src,glyphs To names⊢1↓code
+      ref←mode ⎕FIX(1↑code),src,glyphs To names⊢1↓code
     ∇
 
       To←{
           mask←×⊃∘⍴¨⍺⍺
-          from←'''[^'']*''' '⍝.*' '`(.)' '⊂\[([^][]+)\]' '⊇\[([^][]+)\]','⍣' '\W' '\w\b'⎕R' *⍣ *' '\\&' '&\\b'⊢mask/⍺⍺
-          to←'&' '&' '\1' '((\1)LeftShoeWithAxis)' '((\1)RightShoeUnderbarWithAxis)','^|$'⎕R' '⊢mask/⍵⍵
+     
+          fromIgnore←'''[^'']*''' '⍝.*' '`(.)'
+          fromSlashes←'⍤/' '⍤⌿' '⍤\\' '⍤⍀' '/∘' '⌿∘' '\\∘' '⍀∘'
+          fromAxes←'⊂\[([^][]+)\]' '⊇\[([^][]+)\]'
+          fromGlyphs←'⍣' '\W' '\w\b'⎕R' *⍣ *' '\\&' '&\\b'⊢mask/⍺⍺
+          from←fromIgnore,fromSlashes,fromAxes,fromGlyphs
+     
+          toIgnore←'&' '&' '\1'
+          toSlashes←'{⍺⍺⍺Slash⍵}' '{⍺⍺⍺SlashBar⍵}' '{⍺⍺⍺BackSlash⍵}' '{⍺⍺⍺BackSlashBar⍵}' '{⍺Slash⍵}∘' '{⍺SlashBar⍵}∘' '{⍺BackSlash⍵}∘' '{⍺BackSlashBar⍵}∘'
+          toAxes←'((\1)LeftShoeWithAxis)' '((\1)RightShoeUnderbarWithAxis)'
+          toGlyphs←'^|$'⎕R' '⊢mask/⍵⍵
+          to←toIgnore,toSlashes,toAxes,toGlyphs
+     
           code←⍵
           ⍝code←'(''[^'']+'' *|"[^"]*" *)+'⎕R{
           ⍝    ~'"'∊'''[^'']'''⎕R''⊢⍵.Match:⍵.Match
