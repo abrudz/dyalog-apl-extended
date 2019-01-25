@@ -54,6 +54,7 @@ Now you have three options:
 | [IotaUnderbarInverse](IotaUnderbarInverse.dyalog) | `⍸⍣¯1` |  🔵   | given `r`, finds `n` so that `r≡⍸n`                          |
 | [JotDiaeresis](JotDiaeresis.dyalog)               |  `⍤`   |  🔵   | allows constant left operand, Atop with function right operand |
 | [LeftShoe](LeftShoe.dyalog)                       |  `⊂`   |  🔵   | allows partitioning along multiple trailing axes, with short ⍺s, and inserting/appending empty partitions |
+| [LeftShoeStile](LeftShoeStile.dyalog)             |  `⍧`   |  🔺   | monad: nub-sieve; dyad: count-in                             |
 | [LeftShoeWithAxis](LeftShoeWithAxis.dyalog)       | `⊂[k]` |  🔵   | as above, but called with left operand                       |
 | [LessThan](LessThan.dyalog)                       |  `<`   |  🔶   | with TAO; monad: is-strictly-positive/is-control-character   |
 | [LessThanOrEqualTo](LessThanOrEqualTo.dyalog)     |  `≤`   |  🔶   | with TAO ; monad: is-non-negative/is-invisible               |
