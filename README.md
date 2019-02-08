@@ -39,6 +39,7 @@ Now you have three options:
 | [DelDiaeresis](DelDiaeresis.dyalog)               |  `⍢`   |  🔺   | Under (a.k.a. Dual)                                          |
 | [DelTilde](DelTilde.dyalog)                       |  `⍫`   |  🔺   | Obverse; `⍺⍺` but with inverse `⍵⍵`                          |
 | [Diaeresis](Diaeresis.dyalog)                     |  `¨`   |  🔵   | allows constant operand                                      |
+| [Divide](Divide.dyalog)                           |  `÷`   |  🔵   | monadic converts letters to title case when possible         |
 | [DownArrow](DownArrow.dyalog)                     |  `↓`   |  🔵   | allows long `⍺`                                              |
 | [DownShoe](DownShoe.dyalog)                       |  `∪`   |  🔵   | allows rank>1                                                |
 | [Downstile](Downstile.dyalog)                     |  `⌊`   |  🔵   | monadic lowercases letters                                   |
@@ -64,7 +65,6 @@ Now you have three options:
 | [Nand](Nand.dyalog)                               |  `⍲`   |  🔶   | monad: not all equal to type                                 |
 | [Nor](Nor.dyalog)                                 |  `⍱`   |  🔶   | monad: not any equal to type                                 |
 | [NotEqualTo](NotEqualTo.dyalog)                   |  `≠`   |  🔶   | with TAO; monad: is-non-type                                 |
-| [Plus](Plus.dyalog)                               |  `+`   |  🔵   | monadic converts letters to title case when possible         |
 | [QuadDiamond](QuadDiamond.dyalog)                 |  `⌺`   |  🔶   | auto-extended `⍵⍵`, allows small `⍵`, optional edge spec(s) ([0:Zero; 1:Repl; 2:Rev; 3:Mirror; 4:Wrap](http://web.science.mq.edu.au/~len/preprint/hamey-dicta2015-functional-border.pdf#page=3); -:Twist) with masks as operand's `⍺` |
 | [QuadColon](QuadColon.dyalog) | `⍠` | 🔵 | also applies to `∆XDN` and `∆XTN` |
 | [Rho](Rho.dyalog)                                 |  `⍴`   |  🔵   | allows omitting one dimension length with `¯1`               |
