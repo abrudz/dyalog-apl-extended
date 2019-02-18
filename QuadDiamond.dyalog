@@ -1,13 +1,6 @@
  QuadDiamond←{ ⍝ ⌺ with auto-extended ⍵⍵, allowing small ⍵, optional edge specs (0:Zero; 1:Repl; 2:Rev; 3:Mirror; 4:Wrap; -:Twist) with masks as operand's ⍺
      ⍺←⊢
-     wShape←⍴⍵
-     wRank←≢wShape
-     ⍬≡⍴⍵⍵:⍺ ⍺⍺ ∇∇(wRank⍴⍵⍵)⊢⍵
-     wwShape←⍴⍵⍵
-     2≠≢wwShape:⍺ ⍺⍺ ∇∇(⍵⍵,[⎕IO-0.5]1)⊢⍵
-     (1=⊃⌽wwShape)∧(1<wRank):⍺ ⍵⍵ ∇∇(wRank/⍵⍵)⊢⍵
-     0∊⍴⍵:↑wShape⍴⊂(shape⍴0)⍺⍺ ⍵⍴⍨shape←⊃↓⍵⍵
-     ⍬≡⍴⍺⊣⍬:(wRank⍴⍺)⍺⍺ ∇∇ ⍵⍵⊢⍵
+     ⍬≡⍴⍺⊣⍬:(wRank⍴⍺⍴⍨≢⍴⍵)⍺⍺ ∇∇ ⍵⍵⊢⍵
 
      extra←¯1+⌈2÷⍨⊃↓⍵⍵ ⍝ needed padding
      w←⊃(⊃0⍴⍵){                           ⍝┌┌─2─┐       monadic; use ↓
