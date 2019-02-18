@@ -71,13 +71,13 @@
           mask←×⊃∘⍴¨⍺⍺
      
           fromIgnore←'''[^'']*''' '⍝.*' '`(.)'
-          fromSlashes←'⍤/' '⍤⌿' '⍤\\' '⍤⍀' '/∘' '⌿∘' '\\∘' '⍀∘'
+          fromSlashes←'⍤/' '⍤⌿' '⍤\\' '⍤⍀' '/∘' '⌿∘' '\\∘' '⍀∘' '/⍨' '⌿⍨' '\\⍨' '⍀⍨'
           fromAxes←'⊂\[([^][]+)\]' '⊇\[([^][]+)\]'
           fromGlyphs←'⍣' '\W' '\w\b'⎕R' *⍣ *' '\\&' '&\\b'⊢mask/⍺⍺
           from←fromIgnore,fromSlashes,fromAxes,fromGlyphs
      
           toIgnore←'&' '&' '\1'
-          toSlashes←'{⍺⍺⍺Slash⍵}' '{⍺⍺⍺SlashBar⍵}' '{⍺⍺⍺BackSlash⍵}' '{⍺⍺⍺BackSlashBar⍵}' '{⍺Slash⍵}∘' '{⍺SlashBar⍵}∘' '{⍺BackSlash⍵}∘' '{⍺BackSlashBar⍵}∘'
+          toSlashes←'{⍺⍺⍺Slash⍵}' '{⍺⍺⍺SlashBar⍵}' '{⍺⍺⍺BackSlash⍵}' '{⍺⍺⍺BackSlashBar⍵}' '{⍺Slash⍵}∘' '{⍺SlashBar⍵}∘' '{⍺BackSlash⍵}∘' '{⍺BackSlashBar⍵}∘'  '{⍺Slash⍵}⍨' '{⍺SlashBar⍵}⍨' '{⍺BackSlash⍵}⍨' '{⍺BackSlashBar⍵}⍨' 
           toAxes←'((\1)LeftShoeWithAxis)' '((\1)RightShoeUnderbarWithAxis)'
           toGlyphs←'^|$'⎕R' '⊢mask/⍵⍵
           to←toIgnore,toSlashes,toAxes,toGlyphs
