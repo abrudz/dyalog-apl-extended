@@ -9,7 +9,7 @@
              r←x pco perv y
          :EndSelect
      :Else
-         r←2 pco perv y
+         r←3 pco perv y
      :EndIf
  :Else
      ⎕SIGNAL⊂⎕DMX.(('EN'EN)('Message'Message))
