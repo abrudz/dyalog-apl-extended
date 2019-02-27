@@ -1,5 +1,5 @@
-﻿ DownArrow←{ ⍝ ↓ which allows long ⍺ even for non-scalars
-     0=⎕NC'⍺':↑⍵
+ DownArrow←{ ⍝ ↓ which allows long ⍺ even for non-scalars
+     0=⎕NC'⍺':↓⍵
      s←⍴⍵
      l←≢¨⍺ s
      ≤/l:⍺↓⍵
