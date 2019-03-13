@@ -30,7 +30,6 @@ Now you have three options:
 
 | Name                                              | Glyph  |   Type*   | Extension                                                    |
 | ------------------------------------------------- | :----: | :---: | ------------------------------------------------------------ |
-| [At](At.dyalog)                                   |  `@`   |  🔵   | prefix-friendly                                              |
 | [BackSlash](BackSlash.dyalog)                     |  `\`   |  🔶   | `∘.f⍨∘⍉⍨` when dyadic, allows short and/or multiple left args |
 | [BackSlashBar](BackSlashBar.dyalog)               |  `⍀`   |  🔶   | `∘.f` when dyadic, allows short and/or multiple left args    |
 | [Bullet](Bullet.dyalog)                           |  `∙`   |  🔺   | Inner product and Alternant                                  |
@@ -49,6 +48,7 @@ Now you have three options:
 | [Equals](Equals.dyalog)                           |  `=`   |  🔶   | with TAO; monad: is-type                                     |
 | [GreaterThan](GreaterThan.dyalog)                 |  `>`   |  🔶   | with TAO; monad: is-strictly-negative/is-visible             |
 | [GreaterThanOrEqualTo](GreaterThanOrEqualTo.dyalog) |  `≥` |  🔶   | with TAO; monad: is non-positive/is-not-control-character    |
+| house                                             |  `⌂`   |  🔺   | prefix for contents of [dfns](http://dfns.dyalog.com/n_contents.htm)  |
 | [infinity](infinity.dyalog)                       |  `∞`   |  🔺   | largest integer (for use with `⍤` and `⍣`)                   |
 | [Iota](Iota.dyalog)                               |  `⍳`   |  🔵   | Unicode version of [dfns's `iotag`](http://dfns.dyalog.com/n_iotag.htm) |
 | [IotaUnderbar](IotaUnderbar.dyalog)               |  `⍸`   |  🔵   | allows duplicates/non-Booleans                               |
