@@ -9,13 +9,19 @@ Extended domains of existing primitives/quad-names, and a few new ones. Requires
 Replacing `ns` with your target namespace (e.g. `#`), do
 
 ```
-]Load path/dyalog-apl-extended/* ns
+]Load path/dyalog-apl-extended/* -target=ns
 ```
 
-or¹⁷
+or<sup>17.0</sup>
 
 ```
 ]Link ns path/dyalog-apl-extended
+```
+
+or<sup>17.1</sup>
+
+```
+]Link.Create ns path/dyalog-apl-extended
 ```
 
 #### Running code
@@ -93,4 +99,7 @@ Now you have three options:
 
 \* 🔺 means new feature 🔶 means added valence 🔵 means expanded domain
 
-¹⁷ Requires Dyalog APL version 17.0
+---
+
+<sup>17.0</sup> Requires Dyalog APL version 17.0  
+<sup>17.0</sup> Requires Dyalog APL version 17.1
