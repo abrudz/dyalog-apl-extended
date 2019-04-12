@@ -4,6 +4,8 @@ Extended domains of existing primitives/quad-names, and a few new ones. Requires
 
 ### How to use
 
+These extensions are [available on *Try it Online*](https://tio.run/##SyzI0U2pTMzJT9dNrShJzUtJTfn//1Hf1EdtEzQMFQwUULAmREjzUW@DekZqTk6@us6j3qWPeleph/sH@bio//8PAA), but can easily be used offline:
+
 #### Initialisation
 
 Replacing `ns` with your target namespace (e.g. `#`), do
