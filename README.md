@@ -62,6 +62,7 @@ Now you have three options:
 | [IotaUnderbar](IotaUnderbar.dyalog)               |  `⍸`   |  🔵   | allows duplicates/non-Booleans                               |
 | [IotaUnderbarInverse](IotaUnderbarInverse.dyalog) | `⍸⍣¯1` |  🔵   | given `r`, finds `n` so that `r≡⍸n`                          |
 | [JotDiaeresis](JotDiaeresis.dyalog)               |  `⍤`   |  🔵   | allows constant left operand, Atop with function right operand |
+| [JotUnderbar](JotUnderbar.dyalog)               |  `⍛`   |  🔺   | reverse composition `X f⍛g Y` is `(f X) g Y` |
 | [LeftShoe](LeftShoe.dyalog)                       |  `⊂`   |  🔵   | allows partitioning along multiple trailing axes, with short ⍺s, and inserting/appending empty partitions |
 | [LeftShoeStile](LeftShoeStile.dyalog)             |  `⍧`   |  🔺   | monad: nub-sieve; dyad: count-in                             |
 | [LeftShoeWithAxis](LeftShoeWithAxis.dyalog)       | `⊂[k]` |  🔵   | as `⊂`, but called with left operand                         |
