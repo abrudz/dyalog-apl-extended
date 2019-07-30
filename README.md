@@ -47,6 +47,7 @@ Now you have three options:
 | [DelTilde](DelTilde.dyalog)                       |  `⍫`   |  🔺   | Obverse; `⍺⍺` but with inverse `⍵⍵`                          |
 | [Diaeresis](Diaeresis.dyalog)                     |  `¨`   |  🔵   | allows constant operand                                      |
 | [Divide](Divide.dyalog)                           |  `÷`   |  🔵   | monadic converts letters to title case when possible         |
+| [DollarSign](DollarSign.dyalog)                   |  `$`   |  🔺   | string enhancement <code>\`1\`</code>:`1⊃⍺`, <code>\`expr\`</code>:`⍎expr`, `\n`:JSON, <code>\\`</code>         |
 | [DownArrow](DownArrow.dyalog)                     |  `↓`   |  🔵   | allows long `⍺`                                              |
 | [DownShoe](DownShoe.dyalog)                       |  `∪`   |  🔵   | allows rank>1                                                |
 | [Downstile](Downstile.dyalog)                     |  `⌊`   |  🔵   | monadic lowercases letters                                   |
@@ -75,7 +76,7 @@ Now you have three options:
 | [Nor](Nor.dyalog)                                 |  `⍱`   |  🔶   | monad: not any equal to type                                 |
 | [NotEqualTo](NotEqualTo.dyalog)                   |  `≠`   |  🔶   | with TAO; monad: is-non-type                                 |
 | [QuadDiamond](QuadDiamond.dyalog)                 |  `⌺`   |  🔶   | auto-extended `⍵⍵`, allows small `⍵`, optional edge spec(s) ([0:Zero; 1:Repl; 2:Rev; 3:Mirror; 4:Wrap](http://web.science.mq.edu.au/~len/preprint/hamey-dicta2015-functional-border.pdf#page=3); -:Twist) with masks as operand's `⍺` |
-| [QuadColon](QuadColon.dyalog) | `⍠` | 🔵 | also applies to `∆XDN` and `∆XTN` |
+| [QuestionMark](QuestionMark.dyalog)               |  `?`   |  🔵   | `⍺?¯⍵` as norm dist stddev `⍵` and optional mean `⍺←0`|
 | [Rho](Rho.dyalog)                                 |  `⍴`   |  🔵   | allows omitting one dimension length with `¯1`               |
 | [RightShoeUnderbar](RightShoeUnderbar.dyalog)     |  `⊇`   |  🔺   | monadic discloses if scalar, dyadic indexes sanely           |
 | [RightShoeUnderbarWithAxis](RightShoeUnderbarWithAxis.dyalog) | `⊇[k]` | 🔺 | as above, but called with left operand              |
