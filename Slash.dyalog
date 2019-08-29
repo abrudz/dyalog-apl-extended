@@ -1,5 +1,6 @@
  Slash←{ ⍝ / which allows replication along multiple trailing axes
      0::⎕SIGNAL ⎕EN
+     ncs←⎕NC↑'⍺' '⍺⍺'
      ⍺←⊢
      3≤⎕NC'⍺⍺':⍺(⍺⍺/)⍵         ⍝ {A} f/ B
      aaLen←-≢⍺⍺
