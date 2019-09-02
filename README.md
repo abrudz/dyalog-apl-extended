@@ -75,6 +75,7 @@ Now you have three options:
 | [Nand](Nand.dyalog)                               |  `⍲`   |  🔶   | monad: not all equal to type                                 |
 | [Nor](Nor.dyalog)                                 |  `⍱`   |  🔶   | monad: not any equal to type                                 |
 | [NotEqualTo](NotEqualTo.dyalog)                   |  `≠`   |  🔶   | with TAO; monad: is-non-type                                 |
+| [Percent](Percent.dyalog)                 |  `%`   |  🔺   | `f%` and `A%`: probability-logical function (mapping arrays) |
 | [QuadDiamond](QuadDiamond.dyalog)                 |  `⌺`   |  🔶   | auto-extended `⍵⍵`, allows small `⍵`, optional edge spec(s) ([0:Zero; 1:Repl; 2:Rev; 3:Mirror; 4:Wrap](http://web.science.mq.edu.au/~len/preprint/hamey-dicta2015-functional-border.pdf#page=3); -:Twist) with masks as operand's `⍺` |
 | [QuestionMark](QuestionMark.dyalog)               |  `?`   |  🔵   | `⍺?¯⍵` as norm dist stddev `⍵` and optional mean `⍺←0`|
 | [Rho](Rho.dyalog)                                 |  `⍴`   |  🔵   | allows omitting one dimension length with `¯1`               |
