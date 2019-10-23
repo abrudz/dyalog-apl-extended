@@ -1,7 +1,7 @@
  BackSlashBar←{ ⍝ ⍀ which allows expansion along multiple leading axes with short ⍺s and ∘.
      0::⎕SIGNAL ⎕EN
      ncs←⎕NC↑'⍺' '⍺⍺'
-     2 3∧.≤ncs:⍺∘.⍺⍺ ⍵        ⍝ A f⍀ B
+     2 3∧.≤ncs:⍺⍺ ⍵        ⍝ ignore left
      0 3∧.≤ncs:⍺⍺⍀⍵           ⍝ f⍀ B
      w←1⌿⍵
      shape←⊃⍴w

@@ -1,8 +1,8 @@
  BackSlash←{ ⍝ \ which allows expansion along multiple trailing axes with short ⍺s and (⍉⍺)∘.
      0::⎕SIGNAL ⎕EN
      ncs←⎕NC↑'⍺' '⍺⍺'
-     2 3∧.≤ncs:⍵∘.⍺⍺⍨⍉⍺      ⍝ A f\ B
-     0 3∧.≤ncs:⍺⍺\⍵          ⍝ f\ B
+     2 3∧.≤ncs:⍺∘.⍺⍺ ⍵ ⍝ A f\ B
+     0 3∧.≤ncs:⍺⍺\⍵    ⍝ f\ B
      w←1/⍵
      shape←⊃⌽⍴w
      2=⊃ncs:⍵\⍺⍺
