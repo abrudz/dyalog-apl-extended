@@ -108,4 +108,4 @@ Now you have three options:
 ---
 
 <sup>17.0</sup> Requires Dyalog APL version 17.0  
-<sup>17.0</sup> Requires Dyalog APL version 17.1
+<sup>17.1</sup> Requires Dyalog APL version 17.1
