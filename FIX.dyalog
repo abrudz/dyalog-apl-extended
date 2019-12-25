@@ -18,7 +18,7 @@
      
       ⍞←'Serial No : 123456',n
       ⍞←'Extended Edition',n
-      ⍞←'Sun' 'Mon' 'Tue' 'Wed' 'Thu' 'Fri' 'Sat'⊃⍨7|2 ⎕NQ #'DateToIDN'⎕TS
+      ⍞←'Sun' 'Mon' 'Tue' 'Wed' 'Thu' 'Fri' 'Sat'⊃⍨1+7|2 ⎕NQ #'DateToIDN'⎕TS
       ⍞←' ','-- ::.'@5 8 11 14 17 20∊⍕¨0 100 100 100 100 100 1000+⎕TS
       ⍞←n
      
