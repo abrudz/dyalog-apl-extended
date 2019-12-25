@@ -7,7 +7,7 @@
      obv←⍺⍺{
          aa←⍺⍺
          3 4::0
-         (⎕CR'DelTilde')≡2⊃⎕CR'aa'
+         1⊣⍺⍺ ns
      }⍬
 
      obv∧3=⎕NC'⍵⍵':⍺(⍺⍺ ns).NrmFn⍣⍵⍵ ⍵
@@ -23,8 +23,8 @@
      obv∧negativeInfinity≡⍵⍵:⍺(⍺⍺ ns).InvFn⍣≡⍵
      negativeInfinity≡⍵⍵:⍺ ⍺⍺⍣¯1⍣≡⍵
 
-     obv∧0<⍵⍵:⍺(⍺⍺ ns).NrmFn⍣⍵⍵⊢⍵
-     obv∧0>⍵⍵:⍺(⍺⍺ ns).InvFn⍣(|⍵⍵)⊢⍵
+     obv∧0<⍵⍵:⍺((⍺⍺ ns).NrmFn⍣⍵⍵)DelTilde((⍺⍺ ns).InvFn⍣⍵⍵)⊢⍵
+     obv∧0>⍵⍵:⍺((⍺⍺ ns).InvFn⍣(|⍵⍵))DelTilde((⍺⍺ ns).NrmFn⍣(|⍵⍵))⊢⍵
 
      ⍺ ⍺⍺⍣⍵⍵⊢⍵
  }
