@@ -6,5 +6,6 @@
      Fn←⎕NS ⍬
      Fn.NrmFn←⍺⍺
      Fn.InvFn←⍵⍵
+     Fn.Obv←1
      Fn
  }

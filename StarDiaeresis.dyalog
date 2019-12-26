@@ -5,9 +5,10 @@
      (2=⎕NC'⍺⍺')∧(0≠≡⍵⍵ val ⍬):⍺⍺(⍺{⍺⍺(⍺ StarDiaeresis ⍵)⍵⍵}⍵)¨⍵⍵
      2=⎕NC'⍺⍺':⍺(⍺⍺⊣⊢)∇∇ ⍵⍵⊢⍵
      obv←⍺⍺{
-         aa←⍺⍺
+         aa←⍺⍺ ns
          3 4::0
-         1⊣⍺⍺ ns
+         9=⎕nc'aa':aa.Obv
+         0
      }⍬
 
      obv∧3=⎕NC'⍵⍵':⍺(⍺⍺ ns).NrmFn⍣⍵⍵ ⍵
@@ -26,5 +27,5 @@
      obv∧0<⍵⍵:⍺((⍺⍺ ns).NrmFn⍣⍵⍵)DelTilde((⍺⍺ ns).InvFn⍣⍵⍵)⊢⍵
      obv∧0>⍵⍵:⍺((⍺⍺ ns).InvFn⍣(|⍵⍵))DelTilde((⍺⍺ ns).NrmFn⍣(|⍵⍵))⊢⍵
 
-     ⍺ ⍺⍺⍣⍵⍵⊢⍵
+     ⍺((⍺⍺⍣⍵⍵)DelTilde(⍺⍺⍣¯1⍣⍵⍵))⍵
  }
