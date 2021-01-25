@@ -47,7 +47,7 @@ Now you have three options:
 | [DelTilde](DelTilde.dyalog)                       |  `⍫`   |  🔺   | Obverse; `⍺⍺` but with inverse `⍵⍵`                          |
 | [Diaeresis](Diaeresis.dyalog)                     |  `¨`   |  🔵   | allows constant operand                                      |
 | [Divide](Divide.dyalog)                           |  `÷`   |  🔵   | monadic converts letters to title case when possible         |
-| [DollarSign](DollarSign.dyalog)                   |  `$`   |  🔺   | string enhancement <code>\`1\`</code>:`1⊃⍺`, <code>\`expr\`</code>:`⍎expr`, `\n`:JSON, <code>\\`</code>         |
+| [DollarSign](DollarSign.dyalog)                   |  `$`   |  🔺   | string enhancement <code>${1}</code>:`1⊃⍺`, <code>${expr}</code>:`⍎expr`, `\n`:JSON |
 | [DownArrow](DownArrow.dyalog)                     |  `↓`   |  🔵   | allows long `⍺`                                              |
 | [DownShoe](DownShoe.dyalog)                       |  `∪`   |  🔵   | allows rank>1                                                |
 | [Downstile](Downstile.dyalog)                     |  `⌊`   |  🔵   | monadic lowercases letters                                   |
