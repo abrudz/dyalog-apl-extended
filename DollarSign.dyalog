@@ -13,6 +13,6 @@
  :Trap 0
      r←pats ⎕R SubFn str
  :Else
-     ⎕SIGNAL⊂⎕DMX.(('EN'EN)('Message'Message))
+     ⎕SIGNAL⊂⎕DMX.(('EN'EN)('Message'(OSError{⍵,2⌽(×≢o)/'") ("',o←⊃⍬⍴2⌽⍺}Message)))
  :EndTrap
  
