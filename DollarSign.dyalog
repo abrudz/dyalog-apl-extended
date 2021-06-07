@@ -1,18 +1,25 @@
- r←{vals}DollarSign str;pats;substs;Sub;SubFn ⍝ $ string enhancement ${1} for indexing into left arg, ${expr}, and \JSON escapes
+ r←{vals}DollarSign str;pats;Sub;SubFn;strings;nulls;marker ⍝ $ string enhancement ${1} for indexing into left arg, ${expr}, and \JSON escapes
  :If 900⌶⍬
-     vals←⍬
+     vals←⊢
  :EndIf
- pats←'\\u....|\\.' '\$\{\d+\}' '\$\{([^}'']*(''[^'']*''))*[^}'']*\}'⍝ \w ${12} ${expr}
- substs←,vals
+ str←'\\u....|\\.'⎕R{⎕JSON'"',⍵.Match,'"'}str
+ pats←'\$\{[\d ]+\}' '\$\{([^}'']*(''[^'']*''))*[^}'']*\}'⍝ \w ${12} ${expr}
+ nulls←1+⌈/0,'\x{0}+'⎕S 1⊢str
+ marker←nulls⍴⎕UCS 0
+ strings←⊃⍣(1≥|≡str)(nulls↓¨⊢⊂⍨marker∘⍷)¨⊆pats ⎕R marker⊢str
  Sub←{
-     0=⍵.PatternNum:⎕JSON'"',⍵.Match,'"'
-     content←2(86⌶)2↓¯1↓⍵.Match ⍝ in calling env
-     ⍕⍺⍺⊃⍨⍣(1=⍵.PatternNum)⊢content
+     ⍵.i←{×⍵.⎕NC'i':1+⍵.i ⋄ ⎕IO}⍵
+     3=≢⍵.Match:⍵.i⊃⍵⍵
+     Content←2(86⌶)1↓⍵.Match ⍝ in calling env
+     i←~⍵.PatternNum
+     i∧3=⎕NC'⍺⍺':⎕SIGNAL⊂('EN' 2)('Message' 'Indexing requires a left argument')
+     ⍕((1/⍺⍺)⊃⍨⊂)⍣(~⍵.PatternNum)⊢⍺⍺ Content ⍵⍵
  }
- SubFn←substs Sub
+
+ SubFn←vals Sub strings
  :Trap 0
      r←pats ⎕R SubFn str
  :Else
-     ⎕SIGNAL⊂⎕DMX.(('EN'EN)('Message'(OSError{⍵,2⌽(×≢o)/'") ("',o←⊃⍬⍴2⌽⍺}Message)))
+     ⎕SIGNAL⊂⎕DMX.(('EN'EN)('Message'(OSError{⍵,2⌽(×≢⊃⍬⍴2⌽⍺,⊂'')/'") ("',o←⊃⍬⍴2⌽⍺}Message)))
  :EndTrap
  
