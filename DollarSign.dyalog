@@ -7,7 +7,7 @@
  Sub←{
      0=⍵.PatternNum:⎕JSON'"',⍵.Match,'"'
      0::⎕SIGNAL⊂⎕DMX.(('EN'EN)('Message'Message))
-     content←1(86⌶)2↓¯1↓⍵.Match ⍝ in calling env
+     content←2(86⌶)2↓¯1↓⍵.Match ⍝ in calling env
      ⍕⍺⍺⊃⍨⍣(1=⍵.PatternNum)⊢content
  }
  SubFn←substs Sub
