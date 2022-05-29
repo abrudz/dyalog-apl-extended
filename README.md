@@ -2,6 +2,8 @@
 
 Extended domains of existing primitives/quad-names, and a few new ones. Requires Dyalog APL version 16.0 or higher.
 
+This project serves as a breeding ground for ideas. While some have been adopted into Dyalog APL proper, it is unlikely that many will be. Furthermore, Dyalog 18.0 gave a different meaning to monadic `≠` than proposed here, leaving Extended Dyalog APL as a deadend. It spiritual successor of sorts is my [Dyalog APL Vision](https://github.com/abrudz/dyalog_vision).
+
 ### How to use
 
 These extensions are [available on *Try it Online*](https://tio.run/##SyzI0U2pTMzJT9dNrShJzUtJTfn//1Hf1EdtEzQMFQwUULAmREjzUW@DekZqTk6@us6j3qWPeleph/sH@bio//8PAA), but can easily be used offline:
