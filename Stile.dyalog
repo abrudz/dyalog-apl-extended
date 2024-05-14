@@ -4,6 +4,6 @@
      w⊣(∊w)←{
          2|⎕DR ⍵:|⍵   ⍝ numeric
          11::⍵        ⍝ fallback to no-op
-         819⌶1(819⌶)⍵ ⍝ normalise
+         ⎕C ⍵ ⍝ normalise
      }¨∊w←⍵
  }
